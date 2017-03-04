@@ -6,123 +6,128 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__logo">
-        <img src="img/logo.svg" width="" height="" alt="">
+      <div class="logo">
+        <img class="logo__image" src="img/logo.svg" width="86" height="35" alt="Логотип">
       </div>
-      <nav class="main-nav  visually-hidden">
-        <ul class="main-nav__items">
+      <nav class="main-nav  dropdown">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="#">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
           </li>
           <li class="main-nav__item">
-            <input type="text" placeholder="Поиск по сайту">
+            <input class="main-nav__search" type="text" placeholder="Поиск по сайту">
           </li>
           <li class="main-nav__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="main-nav__basket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-content">
-      <section class="page-header">
+      <div class="page-header">
         <h2 class="page-header__title">Милые штуки ручной работы для дома</h2>
-        <div class="page-header__interior">
-          <span>Предметы интерьера</span>
-        </div>
-        <div class="page-header__toys">
-          <span>Детские игрушки</span>
-        </div>
-      </section>
-      <div class="catalog-items">
-        <div class="works-item works-item--item-of-week">
-          <h3 class="works-item__name">Вязаные корзинки</h3>
-          <article>Товар недели</article>
-          <p class="works-item__description">Экологически чистая пряжа, ручная работа.
+        <a href="#">
+          <div class="page-header__category page-header__category--interior">
+            <span>Предметы интерьера</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="page-header__category page-header__category--toys">
+            <span>Детские игрушки</span>
+          </div>
+        </a>
+      </div>
+      <div class="work-item">
+        <h3 class="work-item__name">Вязаные корзинки</h3>
+        <span>Товар недели</span>
+        <p class="work-item__description">Экологически чистая пряжа, ручная работа.
           Доступны в шести расцветках, и трех размерах.</p>
-          <ul class="works-item__information">
-            <li>Цвет</li>
-            <li>Диаметр</li>
-            <li>Высота</li>
-          </ul>
-          <ul class="works-item__data">
-            <li>"Тиффани"/серый</li>
-            <li>25 см</li>
-            <li>15 см</li>
-          </ul>
-          <img src="" width="" height="" alt="">
-          <span class="works-item__price">Цена: 990 руб.</span>
-          <button class="works-item__button btn" type="submit">Заказать</button>
-        </div>
+        <table>
+          <tr class="work-item__table-row">
+            <td class="work-item__characteristic">Цвет</td>
+            <td class="work-item__characteristic">"Тиффани"/серый</td>
+          </tr>
+          <tr class="work-item__table-row">
+            <td class="work-item__characteristic">Диаметр</td>
+            <td class="work-item__characteristic">25 см</td>
+          </tr>
+          <tr class="work-item__table-row">
+            <td class="work-item__characteristic">Высота</td>
+            <td class="work-item__characteristic">15 см</td>
+          </tr>
+        </table>
+        <img class="works-item__image" src="#" width="260" height="315" alt="Вязанные корзинки">
+        <span class="works-item__price">Цена: 990 руб.</span>
+        <button class="works-item__button btn">Заказать</button>
       </div>
       <div class="about-us">
         <div class="about-us__item">
-          <img src="" width="" height="" alt="">
-          <p class="about-us__information">Экологически чистые материалы</p>
+          <img class="about-us__image" src="#" width="33" height="38" alt="">
+          <p class="about-us__description">Экологически чистые материалы</p>
         </div>
         <div class="about-us__item">
-          <img src="" width="" height="" alt="">
-          <p class="about-us__information">Скандинавский стиль по российской цене</p>
+          <img class="about-us__image" src="#" width="" height="47" alt="27">
+          <p class="about-us__description">Скандинавский стиль по российской цене</p>
         </div>
         <div class="about-us__item">
-          <img src="" width="" height="" alt="">
-          <p class="about-us__information">Увеличивает лайки на фотографиях</p>
+          <img class="about-us__image" src="#" width="34" height="27" alt="">
+          <p class="about-us__description">Увеличивает лайки на фотографиях</p>
         </div>
         <div class="about-us__item">
-          <img src="" width="" height="" alt="">
-          <p class="about-us__information">Связано вручную с любовью и умилением</p>
+          <img class="about-us__image" src="#" width="35" height="34" alt="">
+          <p class="about-us__description">Связано вручную с любовью и умилением</p>
         </div>
         <div class="about-us__item">
-          <img src="" width="" height="" alt="">
-          <p class="about-us__information">Поддержка отечественного производителя</p>
+          <img class="about-us__image" src="#" width="55" height="23" alt="">
+          <p class="about-us__description">Поддержка отечественного производителя</p>
         </div>
         <div class="about-us__item">
-          <img src="" width="" height="" alt="">
-          <p class="about-us__information">Поставляется в подарочной упаковке</p>
+          <img class="about-us__image" src="#" width="33" height="32" alt="">
+          <p class="about-us__description">Поставляется в подарочной упаковке</p>
         </div>
       </div>
       <div class="reviews">
         <h3 class="reviews__title">Отзывы</h3>
-        <div class="reviews__item">
-          <p class="reviews__data">Я молодая мама, но всё равно фотографии не набирали
-            и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,
-            я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-             стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author-name">Анастасия Красильникова</cite>
-          <span>@misssssiskras</span>
-        </div>
-        <button class="reviews__prev-btn" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next-btn" type="button">Следующий отзыв</button>
-        <a class="reviews__write btn" href="#">Написать</a>
+        <blockquote class="reviews__content">Я молодая мама, но всё равно фотографии не набирали
+           и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,
+           я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+           стильными, а также набирают больше лайков!
+           <p class="reviews__author-name">Анастасия Красильникова</p>
+           <cite class="reviews__source">@misssssiskras</cite>
+        </blockquotep>>
+        <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
+        <a class="reviews__write-us btn" href="#">Написать</a>
       </div>
       <div class="contacts">
         <h3 class="contacts__title">Контакты</h3>
-        <div class="contacts__wrap">
-          <ul class="contacts__information">
-            <li>e-mail:</li>
-            <li>адрес:</li>
-          </ul>
-          <ul class="contacts__data">
-            <li>info@mimimishkashop.ru</li>
-            <li>г.Санкт-Петербург, ул.Большая Конюшенная, д. 19/8, офис 101</li>
-          </ul>
+        <div class="contacts__content">
+          <table>
+            <tr class="contacts__table-row">
+              <td class="contacts__content">e-mail:</td>
+              <td class="contacts__content">info@mimimishkashop.ru</td>
+            </tr>
+            <tr class="contacts__table-row">
+              <td class="contacts__content">адрес:</td>
+              <td class="contacts__content">г.Санкт-Петербург, ул.Большая Конюшенная, д. 19/8, офис 101</td>
+            <tr>
+          </table>
         </div>
-        <img class="contacts__map" src="" width="" height="">
+        <img class="contacts__map" src="#" width="320" height="450">
         <a class="contacts__write btn" href="#">Напишите нам</a>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__social">
-        <ul class="main-footer__items">
-          <li class="main-footer__item instagramm">Instagramm</li>
-          <li class="main-footer__item fb">fb</li>
-          <li class="main-footer__item twitter">Twitter</li>
-        </ul>
-      </div>
+      <ul class="main-footer__social">
+        <li class="main-footer__item main-footer__item--instagramm">Instagramm</li>
+        <li class="main-footer__item main-footer__item--fb">fb</li>
+        <li class="main-footer__item main-footer__item--twitter">Twitter</li>
+      </ul>
       <div class="main-footer__copyrights">
-        <span>Розработано</span>
+        <span class="main-footer__slogan">Розработано</span>
         <a class="main-footer__copyright-link" href="#">HTML academy</a>
       </div>
     </footer>
