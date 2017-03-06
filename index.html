@@ -9,19 +9,19 @@
       <div class="logo">
         <img class="logo__image" src="img/logo.svg" width="86" height="35" alt="Логотип">
       </div>
-      <nav class="main-nav dropdown">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог товаров</a>
+      <nav class="nav-dropdown">
+        <ul class="nav-dropdown__list">
+          <li class="nav-dropdown__item">
+            <a class="nav-dropdown__category" href="#">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Вязание на заказ</a>
+          <li class="nav-dropdown__item">
+            <a class="nav-dropdown__category" href="#">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
-            <input class="main-nav__search" type="text" placeholder="Поиск по сайту">
+          <li class="nav-dropdown__item">
+            <input class="nav-dropdown__search" type="text" placeholder="Поиск по сайту">
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__basket" href="#">Корзина: пока пуста</a>
+          <li class="nav-dropdown__item">
+            <a class="nav-dropdown__basket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -29,39 +29,35 @@
     <main class="main-content">
       <div class="page-header">
         <h2 class="page-header__title">Милые штуки ручной работы для дома</h2>
-        <a href="#">
-          <div class="page-header__category page-header__category--interior">
-            <span>Предметы интерьера</span>
-          </div>
+        <a class="page-header__category page-header__category--interior" href="#">
+          Предметы интерьера
         </a>
-        <a href="#">
-          <div class="page-header__category page-header__category--toys">
-            <span>Детские игрушки</span>
-          </div>
+        <a class="page-header__category page-header__category--toys" href="#">
+          Детские игрушки
         </a>
       </div>
-      <div class="work-item">
-        <h3 class="work-item__name">Вязаные корзинки</h3>
+      <div class="item">
+        <h3 class="item__name">Вязаные корзинки</h3>
         <span>Товар недели</span>
-        <p class="work-item__description">Экологически чистая пряжа, ручная работа.
+        <p class="item__description">Экологически чистая пряжа, ручная работа.
           Доступны в шести расцветках, и трех размерах.</p>
         <table>
-          <tr class="work-item__table-row">
-            <td class="work-item__characteristic">Цвет</td>
-            <td class="work-item__characteristic">"Тиффани"/серый</td>
+          <tr class="item__table-row">
+            <td class="item__information">Цвет</td>
+            <td class="item__information-description">"Тиффани"/серый</td>
           </tr>
-          <tr class="work-item__table-row">
-            <td class="work-item__characteristic">Диаметр</td>
-            <td class="work-item__characteristic">25 см</td>
+          <tr class="item__table-row">
+            <td class="item__information">Диаметр</td>
+            <td class="-item__information-description">25 см</td>
           </tr>
-          <tr class="work-item__table-row">
-            <td class="work-item__characteristic">Высота</td>
-            <td class="work-item__characteristic">15 см</td>
+          <tr class="item__table-row">
+            <td class="item__information">Высота</td>
+            <td class="item__information-description">15 см</td>
           </tr>
         </table>
-        <img class="works-item__image" src="#" width="260" height="315" alt="Вязанные корзинки">
-        <span class="works-item__price">Цена: 990 руб.</span>
-        <button class="works-item__button btn">Заказать</button>
+        <img class="item__image" src="#" width="260" height="315" alt="Вязанные корзинки">
+        <span class="item__price">Цена: 990 руб.</span>
+        <button class="item__button btn">Заказать</button>
       </div>
       <div class="about-us">
         <div class="about-us__item">
@@ -93,8 +89,8 @@
         <h3 class="reviews__title">Отзывы</h3>
         <blockquote class="reviews__item">
           <p class="reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали болеестильными, а также набирают больше лайков!</p>
-          <span class="reviews__author-name">Анастасия Красильникова</span>
-          <cite class="reviews__source">@misssssiskras</cite>
+          <p class="reviews__author-name">Анастасия Красильникова</p>
+          <p class="reviews__source">@misssssiskras</p>
         </blockquote>
         <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
         <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
@@ -117,14 +113,14 @@
       </div>
     </main>
     <footer class="main-footer">
-      <ul class="main-footer__social">
-        <li class="main-footer__item main-footer__item--instagramm">Instagramm</li>
-        <li class="main-footer__item main-footer__item--fb">fb</li>
-        <li class="main-footer__item main-footer__item--twitter">Twitter</li>
+      <ul class="social">
+        <li class="social__item social__item--instagramm">Instagramm</li>
+        <li class="social__item social__item--fb">fb</li>
+        <li class="social__item social__item--twitter">Twitter</li>
       </ul>
-      <div class="main-footer__copyrights">
-        <span class="main-footer__slogan">Розработано</span>
-        <a class="main-footer__copyright-link" href="#">HTML academy</a>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__copyright-link" href="#">HTML academy</a>
       </div>
     </footer>
   </body>

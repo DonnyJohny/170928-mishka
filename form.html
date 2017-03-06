@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="#">
+          <img class="logo__image" src="img/logo.svg" width="86" height="35" alt="Логотип">
+        </a>
+      </div>
+      <nav class="nav-dropdown">
+        <ul class="nav-dropdown__list">
+          <li class="nav-dropdown__item">
+            <a class="nav-dropdown__category" href="#">Каталог товаров</a>
+          </li>
+          <li class="nav-dropdown__item">
+            <a class="nav-dropdown__category" href="#">Вязание на заказ</a>
+          </li>
+          <li class="nav-dropdown__item">
+            <input class="nav-dropdown__search" type="text" placeholder="Поиск по сайту">
+          </li>
+          <li class="nav-dropdown__item">
+            <a class="nav-dropdown__basket" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h2 class="main-content__title">Вязание на заказ</h2>
+      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order-form">
+        <h4 class="order-form__subtitle">Тип</h4>
+        <label class="order-form__category">
+          <input class="order-form__radio-category" type="radio">
+          Аксессуары для интерьера
+        </label>
+        <label class="order-form__category">
+          <input class="order-form__radio-category" type="radio">
+          Детская игрушка
+        </label>
+        <h4 class="order-form__subtitle">Цвет</h4>
+        <label class="order-form__color">
+          <input class="order-form__checkbox-color" type="checkbox">
+          Белый
+        </label>
+        <label class="order-form__color">
+          <input class="order-form__checkbox-color" type="checkbox">
+          Серый
+        </label>
+        <label class="order-form__color">
+          <input class="order-form__checkbox-color" type="checkbox">
+          "Тиффани"
+        </label>
+        <label class="order-form__color">
+          <input class="order-form__checkbox-color" type="checkbox">
+          Черный
+        </label class="order-form__color">
+        <label>
+          <input class="order-form__checkbox-color" type="checkbox">
+          Розовый
+        </label>
+        <label class="order-form__color">
+          <input class="order-form__checkbox-color" type="checkbox">
+          Оранжевый
+        </label>
+        <h4 class="order-form__subtitle">ФИО</h4>
+        <label class="order-form__name">
+          Имя:
+          <input class="order-form__input-name" type="text" placeholder="Введите ваше имя*" required>
+        </label>
+        <label class="order-form__name">
+          Фамилия:
+          <input class="order-form__input-name" type="text" placeholder="Укажите фамилию*" required>
+        </label>
+        <label class="order-form__name">
+          Отчество:
+          <input class="order-form__input-name" type="text" placeholder="Отчество, если желаете">
+        </label>
+        <h4 class="order-form__subtitle">Тел</h4>
+        <input type="text" placeholder="+7 XXX XX XX*" required>
+        <h4 class="order-form__subtitle">E-mail</h4>
+        <input type="text" placeholder="Ваш e-mail*" required>
+        <h4 class="order-form__subtitle">Доп</h4>
+        <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <p>*Поля обязательны для заполнения<p>
+        <button class="btn" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <ul class="social">
+        <li class="social__item social__item--instagramm">Instagramm</li>
+        <li class="social__item social__item--fb">fb</li>
+        <li class="social__item social__item--twitter">Twitter</li>
+      </ul>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__copyright-link" href="#">HTML academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
