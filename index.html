@@ -18,7 +18,7 @@
             <a class="nav-dropdown__link" href="#">Вязание на заказ</a>
           </li>
           <li class="nav-dropdown__item">
-            <input class="nav-dropdown__input nav-dropdown__input-search" type="text" placeholder="Поиск по сайту">
+            <input class="nav-dropdown__input nav-dropdown__input--search" type="text" placeholder="Поиск по сайту">
           </li>
           <li class="nav-dropdown__item">
             <a class="nav-dropdown__link nav-dropdown__link--basket" href="#">Корзина: пока пуста</a>
@@ -30,19 +30,19 @@
       <h2 class="page-header__title">Милые штуки ручной работы для дома</h2>
     </div>
     <div class="page-navigation">
-      <a class="page-navigation__category page-header__category--interior" href="#">
+      <a class="page-navigation__category page-navigation__category--interior" href="#">
         Предметы интерьера
       </a>
     </div>
     <div class="page-navigation">
-      <a class="page-navigation__category page-header__category--toys" href="#">
+      <a class="page-navigation__category page-navigation__category--toys" href="#">
         Детские игрушки
       </a>
     </div>
     <main class="main-content">
       <div class="product-cart">
         <h3 class="product-cart__name">Вязаные корзинки</h3>
-        <span>Товар недели</span>
+        <span class="product-cart__subtitle">Товар недели</span>
         <p class="product-cart__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product-cart__table">
           <tr class="product-cart__table-row">
@@ -60,7 +60,7 @@
         </table>
         <img class="product-cart__image" src="#" width="260" height="315" alt="Вязанные корзинки">
         <span class="product-cart__price">Цена: 990 руб.</span>
-        <button class="product-cart__button btn">Заказать</button>
+        <a class="product-cart__btn">Заказать</button>
       </div>
       <div class="about-us">
         <div class="about-us__item">
@@ -85,9 +85,9 @@
       <div class="reviews">
         <h3 class="reviews__title">Отзывы</h3>
         <blockquote class="reviews__item">
-          <p class="reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали болеестильными, а также набирают больше лайков!</p>
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали болеестильными, а также набирают больше лайков!</p>
           <p class="reviews__author">Анастасия Красильникова</p>
-          <a class="reviews__link">@misssssiskras</a>
+          <span class="reviews__nickname">@misssssiskras</span>
         </blockquote>
         <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
         <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
@@ -98,7 +98,7 @@
           <table class="contacts__table">
             <tr class="contacts__table-row">
               <td class="contacts__content">e-mail:</td>
-              <td class="contacts__address">info@mimimishkashop.ru</td>
+              <td class="contacts__address"><a class="contacts__email" href="#">info@mimimishkashop.ru</a></td>
             </tr>
             <tr class="contacts__table-row">
               <td class="contacts__content">адрес:</td>
@@ -111,14 +111,22 @@
     </main>
     <footer class="main-footer">
       <ul class="social">
-        <li class="social__item social__item--instagramm"><a class="social_link" href="#">Instagramm</a></li>
-        <li class="social__item social__item--fb"><a class="social_link" href="#">fb</a></li>
-        <li class="social__item social__item--twitter"><a class="social_link" href="#">Twitter</a></li>
+        <li class="social__item"><a class="social__link social__link--instagramm" href="#">Instagramm</a></li>
+        <li class="social__item"><a class="social__link social__link--fb" href="#">fb</a></li>
+        <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
       </ul>
       <div class="copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="#">HTML academy</a>
       </div>
     </footer>
+    <div class="modal">
+      <form class="modal__form">
+        <input class="modal__radio" type="radio" name="size" value="S">
+        <input class="modal__radio" type="radio" name="size" value="M">
+        <input class="modal__radio" type="radio" name="size" value="L">
+        <button class="modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>

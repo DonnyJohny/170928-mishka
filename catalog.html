@@ -20,7 +20,7 @@
             <a class="nav-dropdown__link" href="#">Вязание на заказ</a>
           </li>
           <li class="nav-dropdown__item">
-            <input class="nav-dropdown__input nav-dropdown__input-search" type="text" placeholder="Поиск по сайту">
+            <input class="nav-dropdown__input nav-dropdown__input--search" type="text" placeholder="Поиск по сайту">
           </li>
           <li class="nav-dropdown__item">
             <a class="nav-dropdown__link nav-dropdown__link--basket" href="#">Корзина: пока пуста</a>
@@ -32,55 +32,63 @@
       <h2 class="page-header__title">Каталог товаров</h2>
     </div>
     <main class="main-content">
-      <div class="catalog-wrapper">
-        <div class="catalog-item">
+      <div class="products-wrapper">
+        <div class="product-cart">
           <a href="#">
-            <img class="catalog-item__image" src="#" width="260" height="165" alt="Зайчик-попрыгайчик">
+            <img class="product-cart__image" src="#" width="260" height="165" alt="Зайчик-попрыгайчик">
           </a>
-          <h3 class="catalog-item__item-title">
-            <a href="#">Зайчик-попрыгайчик</a>
+          <h3 class="product-cart__title">
+            <a class="product-cart__link" href="#">Зайчик-попрыгайчик</a>
           </h3>
-          <p class="catalog-item__description">Рост 30 см, вес 200г</p>
-          <a class="catalog-item__price">1200 руб.</a>
+          <p class="product-cart__description">Рост 30 см, вес 200г</p>
+          <a class="product-cart__price">1200 руб.</a>
         </div>
-        <div class="catalog-item">
+        <div class="product-cart">
           <a href="#">
-            <img class="catalog-item__image" src="#" width="260" height="165" alt="Корзинка для белья">
+            <img class="product-cart__image" src="#" width="260" height="165" alt="Корзинка для белья">
           </a>
-          <h3 class="catalog-item__item-title">
-            <a href="#">Корзинка для белья</a>
+          <h3 class="product-cart__title">
+            <a class="product-cart__link" href="#">Корзинка для белья</a>
           </h3>
-          <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-          <a class="catalog-item__price">690 руб.</a>
+          <p class="product-cart__description">Диаметр 15 см, высота 10 см</p>
+          <a class="product-cart__price">690 руб.</a>
         </div>
-        <div class="catalog-item">
+        <div class="product-cart">
           <a href="#">
-            <img class="catalog-item__image" src="#" width="260" height="165" alt="Корзина для игрушек">
+            <img class="product-cart__image" src="#" width="260" height="165" alt="Корзина для игрушек">
           </a>
-          <h3 class="catalog-item__item-title">
-            <a href="#">Большая корзина для игрушек</a>
+          <h3 class="product-cart__title">
+            <a class="product-cart__link" href="#">Большая корзина для игрушек</a>
           </h3>
-          <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
-          <a class="catalog-item__price">1500 руб.</a>
+          <p class="product-cart__description">Диаметр 30 см, высота 30 см</p>
+          <a class="product-cart__price">1500 руб.</a>
         </div>
       </div>
       <div class="video-item">
-        <h3>Процесс производства</h3>
-        <video class="video-item__video" poster="#" src="#" width="260" height="150" alt="Видео">
+        <h3 class="video-item__title">Процесс производства</h3>
+        <video class="video-item__video" controls poster="#" src="#" width="260" height="150" alt="Видео"></video>
         <p class="video-item__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="video-item__button btn" type="button">Заказать</button>
+        <a class="video-item__btn" href="#">Заказать</button>
       </div>
     </main>
     <footer class="main-footer">
       <ul class="social">
-        <li class="social__item social__item--instagramm"><a class="social_link" href="#">Instagramm</a></li>
-        <li class="social__item social__item--fb"><a class="social_link" href="#">fb</a></li>
-        <li class="social__item social__item--twitter"><a class="social_link" href="#">Twitter</a></li>
+        <li class="social__item"><a class="social__link social__link--instagramm" href="#">Instagramm</a></li>
+        <li class="social__item"><a class="social__link social__link--fb" href="#">fb</a></li>
+        <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
       </ul>
       <div class="copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="#">HTML academy</a>
       </div>
     </footer>
+    <div class="modal">
+      <form class="modal__form">
+        <input class="modal__radio" type="radio" name="size" value="S">
+        <input class="modal__radio" type="radio" name="size" value="M">
+        <input class="modal__radio" type="radio" name="size" value="L">
+        <button class="modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
