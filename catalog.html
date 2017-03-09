@@ -33,42 +33,43 @@
     </div>
     <main class="main-content">
       <div class="products-wrapper">
-        <div class="product-cart">
+        <div class="product-card">
           <a href="#">
-            <img class="product-cart__image" src="#" width="260" height="165" alt="Зайчик-попрыгайчик">
+            <img class="product-card__image" src="#" width="260" height="165" alt="Зайчик-попрыгайчик">
           </a>
-          <h3 class="product-cart__title">
-            <a class="product-cart__link" href="#">Зайчик-попрыгайчик</a>
+          <h3 class="product-card__title">
+            <a class="product-card__link" href="#">Зайчик-попрыгайчик</a>
           </h3>
-          <p class="product-cart__description">Рост 30 см, вес 200г</p>
-          <a class="product-cart__price">1200 руб.</a>
+          <p class="product-card__description">Рост 30 см, вес 200г</p>
+          <a class="product-card__price">1200 руб.</a>
         </div>
-        <div class="product-cart">
+        <div class="product-card">
           <a href="#">
-            <img class="product-cart__image" src="#" width="260" height="165" alt="Корзинка для белья">
+            <img class="product-card__image" src="#" width="260" height="165" alt="Корзинка для белья">
           </a>
-          <h3 class="product-cart__title">
-            <a class="product-cart__link" href="#">Корзинка для белья</a>
+          <h3 class="product-card__title">
+            <a class="product-card__link" href="#">Корзинка для белья</a>
           </h3>
-          <p class="product-cart__description">Диаметр 15 см, высота 10 см</p>
-          <a class="product-cart__price">690 руб.</a>
+          <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
+          <a class="product-card__price">690 руб.</a>
         </div>
-        <div class="product-cart">
+        <div class="product-card">
           <a href="#">
-            <img class="product-cart__image" src="#" width="260" height="165" alt="Корзина для игрушек">
+            <img class="product-card__image" src="#" width="260" height="165" alt="Корзина для игрушек">
           </a>
-          <h3 class="product-cart__title">
-            <a class="product-cart__link" href="#">Большая корзина для игрушек</a>
+          <h3 class="product-card__title">
+            <a class="product-card__link" href="#">Большая корзина для игрушек</a>
           </h3>
-          <p class="product-cart__description">Диаметр 30 см, высота 30 см</p>
-          <a class="product-cart__price">1500 руб.</a>
+          <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
+          <a class="product-card__price">1500 руб.</a>
         </div>
       </div>
-      <div class="video-item">
-        <h3 class="video-item__title">Процесс производства</h3>
-        <video class="video-item__video" controls poster="#" src="#" width="260" height="150" alt="Видео"></video>
-        <p class="video-item__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="video-item__btn" href="#">Заказать</a>
+      <div class="video">
+        <h3 class="video__title">Процесс производства</h3>
+        <video class="video__video" poster="#" src="#" width="260" height="150" alt="Создание корзины"></video>
+        <button class="vide__button" type="button"><img class="video__button__img" src="#" width="102" height="68" alt="Запуск видео"></button>
+        <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="video__btn" href="#">Заказать</a>
       </div>
     </main>
     <footer class="main-footer">
@@ -84,9 +85,17 @@
     </footer>
     <div class="modal">
       <form class="modal__form">
-        <input class="modal__radio" type="radio" name="size" value="S">
-        <input class="modal__radio" type="radio" name="size" value="M">
-        <input class="modal__radio" type="radio" name="size" value="L">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <label class="modal__label">S
+          <input class="modal__radio" type="radio" name="size" value="S">
+        </label>
+        <label class="modal__label">M
+          <input class="modal__radio" type="radio" name="size" value="M">
+        </label>
+        <label class="modal__label">L
+          <input class="modal__radio" type="radio" name="size" value="L">
+        </label>
         <button class="modal__btn" type="submit">Добавить</button>
       </form>
     </div>

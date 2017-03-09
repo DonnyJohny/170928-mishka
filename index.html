@@ -40,27 +40,27 @@
       </a>
     </div>
     <main class="main-content">
-      <div class="product-cart">
-        <h3 class="product-cart__name">Вязаные корзинки</h3>
-        <span class="product-cart__subtitle">Товар недели</span>
-        <p class="product-cart__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="product-cart__table">
-          <tr class="product-cart__table-row">
-            <td class="product-cart__information">Цвет</td>
-            <td class="product-cart__information-description">"Тиффани"/серый</td>
+      <div class="week-product">
+        <h3 class="week-product__name">Вязаные корзинки</h3>
+        <span class="week-product__subtitle">Товар недели</span>
+        <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="week-product__table">
+          <tr class="week-product__table-row">
+            <td class="week-product__information">Цвет</td>
+            <td class="week-product__information-description">"Тиффани"/серый</td>
           </tr>
-          <tr class="product-cart__table-row">
-            <td class="product-cart__information">Диаметр</td>
-            <td class="product-cart__information-description">25 см</td>
+          <tr class="week-product__table-row">
+            <td class="week-product__information">Диаметр</td>
+            <td class="week-product__information-description">25 см</td>
           </tr>
-          <tr class="product-cart__table-row">
-            <td class="product-cart__information">Высота</td>
-            <td class="product-cart__information-description">15 см</td>
+          <tr class="week-product__table-row">
+            <td class="week-product__information">Высота</td>
+            <td class="week-product__information-description">15 см</td>
           </tr>
         </table>
-        <img class="product-cart__image" src="#" width="260" height="315" alt="Вязанные корзинки">
-        <span class="product-cart__price">Цена: 990 руб.</span>
-        <a class="product-cart__btn">Заказать</a>
+        <img class="week-product__image" src="#" width="260" height="315" alt="Вязанные корзинки">
+        <span class="week-product__price">Цена: 990 руб.</span>
+        <a class="week-product__btn">Заказать</a>
       </div>
       <div class="about-us">
         <div class="about-us__item">
@@ -122,9 +122,17 @@
     </footer>
     <div class="modal">
       <form class="modal__form">
-        <input class="modal__radio" type="radio" name="size" value="S">
-        <input class="modal__radio" type="radio" name="size" value="M">
-        <input class="modal__radio" type="radio" name="size" value="L">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <label class="modal__label">S
+          <input class="modal__radio" type="radio" name="size" value="S">
+        </label>
+        <label class="modal__label">M
+          <input class="modal__radio" type="radio" name="size" value="M">
+        </label>
+        <label class="modal__label">L
+          <input class="modal__radio" type="radio" name="size" value="L">
+        </label>
         <button class="modal__btn" type="submit">Добавить</button>
       </form>
     </div>
