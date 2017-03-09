@@ -37,38 +37,38 @@
         <form class="order-form" name="order-form" method="get">
           <div class="order-form__block">
             <h4 class="order-form__subtitle">Тип</h4>
-            <label class="order-form__label">
+            <label class="order-form__label order-form__label--radio">
               <input class="order-form__radio" type="radio" name="product" value="accessories" checked>
               Аксессуары для интерьера
             </label>
-            <label class="order-form__label">
+            <label class="order-form__label order-form__label--radio">
               <input class="order-form__radio" type="radio" name="product" value="toys">
               Детская игрушка
             </label>
           </div>
           <div class="order-form__block">
             <h4 class="order-form__subtitle">Цвет</h4>
-            <label class="order-form__label">
+            <label class="order-form__label order-form__label--checkbox">
               <input class="order-form__checkbox" type="checkbox" name="color" value="white">
               Белый
             </label>
-            <label class="order-form__label">
+            <label class="order-form__label order-form__label--checkbox">
               <input class="order-form__checkbox-color" type="checkbox" name="color" value="grey">
               Серый
             </label>
-            <label class="order-form__label">
+            <label class="order-form__label order-form__label--checkbox">
               <input class="order-form__checkbox" type="checkbox" name="color" value="Tiffany">
               "Тиффани"
             </label>
-            <label class="order-form__label">
+            <label class="order-form__label order-form__label--checkbox">
               <input class="order-form__checkbox" type="checkbox" name="color" value="black">
               Черный
             </label>
-            <label class="order-form__label">
+            <label class="order-form__label order-form__label--checkbox">
               <input class="order-form__checkbox" type="checkbox" name="color" value="pink">
               Розовый
             </label>
-            <label class="order-form__label">
+            <label class="order-form__label order-form__label--checkbox">
               <input class="order-form__checkbox" type="checkbox" name="color" value="orange">
               Оранжевый
             </label>
@@ -90,9 +90,13 @@
           </div>
           <div class="order-form__block">
             <h4 class="order-form__subtitle">Тел</h4>
-            <input class="order-form__contacts" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
+            <label class="order-form__phone-icon">
+              <input class="order-form__contacts" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
+            </label>
             <h4 class="order-form__subtitle">E-mail</h4>
-            <input class="order-form__contacts" type="email" name="e-mail" placeholder="Ваш e-mail*" required>
+            <label class="order-form__mail-icon">
+              <input class="order-form__contacts" type="email" name="e-mail" placeholder="Ваш e-mail*" required>
+            </label>
             <h4 class="order-form__subtitle">Доп</h4>
             <textarea class="order-form__textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
