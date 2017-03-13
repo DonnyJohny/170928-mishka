@@ -1,0 +1,88 @@
+.about-us {
+  &__subtitle {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+  &__item {
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 25px;
+
+    &--ecology::before {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      content: "";
+      display: block;
+      width: 33px;
+      height: 38px;
+      background-image: url("../img/icon-feature-1.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--style::before {
+      position: absolute;
+      top: 5px;
+      left: 2px;
+      content: "";
+      display: block;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-3.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--likes::before {
+      position: absolute;
+      top: 5px;
+      left: 9px;
+      content: "";
+      display: block;
+      width: 34px;
+      height: 29px;
+      background-image: url("../img/icon-feature-5.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--handmade::before {
+      position: absolute;
+      top: 5px;
+      left: 9px;
+      content: "";
+      display: block;
+      width: 35px;
+      height: 34px;
+      background-image: url("../img/icon-feature-2.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--support::before {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      content: "";
+      display: block;
+      width: 55px;
+      height: 23px;
+      background-image: url("../img/icon-feature-4.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--present-box::before {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      content: "";
+      display: block;
+      width: 33px;
+      height: 32px;
+      background-image: url("../img/icon-feature-6.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &__description {
+    margin: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.product-card {
+  border: 1px solid #ededed;
+  margin-bottom: 30px;
+  padding: 0 25px;
+
+  &__image {
+    width: 260px;
+    height: 165px;
+    margin-left: -25px;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  &__description {
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+    margin: 0;
+    font-size: 13px;
+  }
+  &__price {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+}

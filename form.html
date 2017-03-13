@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="logo">
         <a href="#">
-          <img class="logo__image" src="img/logo.svg" width="86" height="35" alt="Логотип">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
       </div>
       <nav class="nav-dropdown">
@@ -28,7 +29,7 @@
         </ul>
       </nav>
     </header>
-    <div class="page-header">
+    <div class="page-header page-header--form">
       <h2 class="page-header__title">Вязание на заказ</h2>
     </div>
     <main class="main-content">
@@ -53,7 +54,7 @@
               Белый
             </label>
             <label class="order-form__label order-form__label--checkbox">
-              <input class="order-form__checkbox-color" type="checkbox" name="color" value="grey">
+              <input class="order-form__checkbox" type="checkbox" name="color" value="grey">
               Серый
             </label>
             <label class="order-form__label order-form__label--checkbox">
@@ -93,15 +94,15 @@
             <label class="order-form__label order-form__label--phone-icon">
               <input class="order-form__contacts" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
             </label>
-            <h4 class="order-form__subtitle">E-mail</h4>
+            <h4 class="order-form__subtitle order-form__subtitle--mail">E-mail</h4>
             <label class="order-form__label order-form__label--mail-icon">
               <input class="order-form__contacts" type="email" name="e-mail" placeholder="Ваш e-mail*" required>
             </label>
             <h4 class="order-form__subtitle">Доп</h4>
             <textarea class="order-form__textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
-          <p>*Поля обязательны для заполнения<p>
-          <button class="btn" type="submit">Отправить заказ</button>
+          <p>*Поля обязательны для заполнения</p>
+          <button class="order-form__btn" type="submit">Отправить заказ</button>
         </form>
       </div>
     </main>

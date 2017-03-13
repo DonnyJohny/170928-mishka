@@ -1,0 +1,51 @@
+.reviews {
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  &__item {
+    margin: 0;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  &__author {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 15px;
+  }
+  &__nickname {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    width: 127px;
+    background-color: #ffffff;
+    outline: none;
+    border: 2px solid #ececec;
+    padding: 10px 0;
+    margin-bottom: 35px;
+  }
+  &__write-us {
+    display: block;
+    border: 2px solid #444444;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 14px 0;
+    text-decoration: none;
+    color: #444444;
+    }
+
+}

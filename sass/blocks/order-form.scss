@@ -1,0 +1,140 @@
+.order-form {
+  &__block {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    position: relative;
+    font-size: 17px;
+    line-height: 20px;
+    color: #63d1bb;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      content: "";
+      width: 197px;
+      height: 1px;
+      background-color: #62d1ba;
+    }
+
+    &--mail {
+      &::before {
+        width: 180px;
+      }
+    }
+  }
+
+  &__radio {
+    display: none;
+  }
+  &__checkbox {
+    display: none;
+  }
+
+  &__label{
+    position: relative;
+    display: block;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+    &--radio {
+      padding-left: 62px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 37px;
+        height: 37px;
+        border: 2px solid black;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--checkbox {
+      padding-left: 62px;
+      margin-bottom: 20px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 38px;
+        height: 38px;
+        border: 2px solid black;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--phone-icon {
+      &::before{
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 24px;
+        background-image: url("../img/icon-phone.svg");
+        top: 3px;
+        right: 4px;
+      }
+    }
+    &--mail-icon {
+      &::before{
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 26px;
+        background-image: url("../img/icon-mail.svg");
+        top: 3px;
+        right: 3px;
+        z-index: 2;
+      }
+    }
+  }
+  &__input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 19px 0;
+  }
+  &__contacts {
+    width: 220px;
+    border: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 19px;
+    padding-right: 40px;
+  }
+  &__textarea {
+    width: 176px;
+    height: 108px;
+    resize: none;
+    border: 2px solid black;
+    padding: 15px;
+    padding-right: 65px;
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 14px 0;
+    text-decoration: none;
+    color: #444444;
+    border: 2px solid #444444;
+    background-color: transparent;
+    margin-bottom: 55px;
+  }
+}
