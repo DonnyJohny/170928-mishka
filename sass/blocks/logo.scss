@@ -1,13 +1,15 @@
 .logo {
-  padding: 22px 0;
-  text-align: center;
-  background-color: #ffffff;
   margin: 0;
-  border-bottom: 1px solid #ececec;
+  padding: 22px 0;
 
-  &__image {
+  text-align: center;
+
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+}
+.logo__image {
+    margin: 0;
+
     width: 86px;
     height: 35px;
-    margin: 0;
   }
-}

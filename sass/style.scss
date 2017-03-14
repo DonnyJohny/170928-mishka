@@ -1,16 +1,15 @@
-body {
-  font-size: 17px;
-  line-height: 20px;
-  width: 320px;
-  color: #000000;
-  background-color: #ffffff;
-  margin: 0;
-}
+@import "normalize.css";
+
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+
+
 
 @import "blocks/logo.scss";
 @import "blocks/nav-dropdown.scss";
 @import "blocks/page-header.scss";
-@import "blocks/main-content.scss";
 
 @import "blocks/page-navigation.scss";
 @import "blocks/week-product.scss";
@@ -18,9 +17,19 @@ body {
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
 @import "blocks/main-footer.scss";
-@import "blocks/modal.scss";
 
+@import "blocks/modal.scss";
+/*
+
+
+
+
+
+
+
+/*
 @import "blocks/products-wrapper.scss";
 @import "blocks/video.scss";
 
 @import "blocks/order-form.scss";
+*/

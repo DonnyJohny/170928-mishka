@@ -1,20 +1,21 @@
 .page-navigation {
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 24px;
   padding: 22px 30px;
   padding-right: 160px;
 
+  font-size: 19px;
+  font-weight: $fw-bold;
+
   &--interior {
-    background-color: #63d1bb;
+    background-color: $tiffany;
   }
 
   &--toys {
-    background-color: #56c3b2;
+    background-color: $dark-tiffany;
   }
+}
 
-  &__category {
-    color: #ffffff;
-    text-decoration: none;
-  }
+.page-navigation__category {
+  color: $reverse-color;
+
+  text-decoration: none;
 }

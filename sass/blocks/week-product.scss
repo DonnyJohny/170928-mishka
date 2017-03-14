@@ -1,66 +1,69 @@
 .week-product {
   padding-top: 30px;
   padding-bottom: 35px;
+
+  color: $dark-brown;
+}
+
+.week-product__name {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.week-product__subtitle {
+  margin-bottom: 25px;
+
+  color: $tiffany;
+
+  text-transform: uppercase;
+}
+
+.week-product__description {
+  margin: 25px 0;
+}
+
+.week-product__table {
+  margin-bottom: 28px;
+}
+
+.week-product__information {
+  width: 100px;
+  padding: 10px 0;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.week-product__information-description {
+  width: 220px;
+  padding: 10px 0;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.week-product__image {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 25px;
+}
+
+.week-product__price {
+  display: block;
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.week-product__btn {
+  display: block;
+  padding: 14px 0;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: $fw-bold;
   color: #444444;
 
-  &__name {
-    font-size: 25px;
-    line-height: 30px;
-    color: #000000;
-    margin: 0;
-  }
-
-  &__subtitle {
-    color: #63d1bb;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-  }
-
-  &__description {
-    margin: 25px 0;
-  }
-
-  &__table {
-    display: table;
-    margin-bottom: 28px;
-  }
-
-  &__table-row {
-    display: table-row;
-  }
-
-  &__information {
-    width: 100px;
-    border-bottom: 1px solid #ececec;
-    padding: 10px 0;
-  }
-
-  &__information-description {
-    width: 220px;
-    border-bottom: 1px solid #ececec;
-    padding: 10px 0;
-  }
-
-  &__image {
-    width: 260px;
-    height: 315px;
-    margin-bottom: 25px;
-  }
-
-  &__price {
-    display: block;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  &__btn {
-    display: block;
-    border: 2px solid #444444;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 14px 0;
-    text-decoration: none;
-    color: #444444;
-  }
+  border: 2px solid $dark-brown;
+  text-decoration: none;
 }
