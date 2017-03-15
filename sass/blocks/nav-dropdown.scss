@@ -10,8 +10,8 @@
 
   text-align: left;
 
-  background-color: $background-color;
-  border-bottom: 1px solid $border-color;
+  background-color: $white-color;
+  border-bottom: 1px solid $grey-color;
 }
 
 .nav-dropdown__link {
@@ -23,7 +23,7 @@
   padding-left: 75px;
 
   font-weight: $fw-bold;
-  color: $main-color;
+  color: $black-color;
 
   text-decoration: none;
 }

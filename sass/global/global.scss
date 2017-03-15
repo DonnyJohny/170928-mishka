@@ -1,15 +1,14 @@
 body {
-  min-width: 260px;
-  max-width: 260px;
+  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 30px;
 
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fw-normal;
   font-size: 17px;
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
-  color: $main-color;
+  color: $black-color;
 
-  background-color: $background-color;
+  background-color: $white-color;
 }

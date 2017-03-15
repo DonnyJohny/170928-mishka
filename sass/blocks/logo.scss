@@ -4,12 +4,13 @@
 
   text-align: center;
 
-  background-color: $background-color;
-  border-bottom: 1px solid $border-color;
+  background-color: $white-color;
+  border-bottom: 1px solid $grey-color;
 }
-.logo__image {
-    margin: 0;
 
-    width: 86px;
-    height: 35px;
-  }
+.logo__image {
+  margin: 0;
+
+  width: 86px;
+  height: 35px;
+}

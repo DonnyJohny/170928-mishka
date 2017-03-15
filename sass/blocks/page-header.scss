@@ -1,5 +1,6 @@
 .page-header {
   margin: 0;
+  padding: 0 30px;
   padding-top: 70px;
 
   text-align: center;
@@ -14,13 +15,13 @@
   &--catalog {
     padding-bottom: 75px;
 
-    background-color: $background-title;
+    background-color: $light-grey;
   }
 
   &--form {
     padding-bottom: 75px;
 
-    background-color: $background-title;
+    background-color: $light-grey;
   }
 }
 

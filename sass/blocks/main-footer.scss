@@ -1,8 +1,6 @@
 .main-footer {
-  width: 260px;
-  margin-left: -30px;
   padding: 0 30px;
-  background-color: $background-title;
+  background-color: $light-grey;
 }
 @import "social.scss";
 @import "copyright.scss";

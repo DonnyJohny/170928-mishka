@@ -1,4 +1,5 @@
 .modal {
+  padding: 0 30px;
   padding-top: 30px;
 
   text-align: center;
@@ -8,7 +9,7 @@
   margin: 0 auto;
   padding: 0 50px;
 
-  font-size: 25px;
+  font-size: $fs-big;
   line-height: 30px;
   font-weight: $fw-bold;
 }
@@ -20,7 +21,7 @@
     margin-bottom: 30px;
     padding: 9px 0;
 
-    border: 1px solid $main-color;
+    border: 1px solid $black-color;
   }
 
 .modal__radio {
@@ -38,8 +39,8 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff;
+    color: $white-color;
 
-    background-color: #63d1bb;
+    background-color: $tiffany;
     border: none;
   }

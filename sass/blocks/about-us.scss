@@ -1,8 +1,12 @@
+.about-us {
+  padding: 0 30px;
+}
+
 .about-us__subtitle {
   margin: 0;
   margin-bottom: 28px;
 
-  font-size: 25px;
+  font-size: $fs-big;
   line-height: 30px;
 }
 
