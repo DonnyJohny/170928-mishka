@@ -15,13 +15,13 @@
   &--catalog {
     padding-bottom: 75px;
 
-    background-color: $light-grey;
+    background-color: $page-header-background;
   }
 
   &--form {
     padding-bottom: 75px;
 
-    background-color: $light-grey;
+    background-color: $page-header-background;
   }
 }
 
@@ -29,6 +29,6 @@
   margin: 0;
 
   font-size: 27px;
-  line-height: 30px;
-  font-weight: $fw-bold;
+  line-height: $line-height-big;
+  font-weight: $font-weight-bold;
 }

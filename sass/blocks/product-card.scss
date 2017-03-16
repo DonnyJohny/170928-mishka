@@ -17,14 +17,14 @@
 }
 
 .product-card__link {
-  color: $black-color;
+  color: $product-link;
   text-decoration: none;
 }
 
 .product-card__description {
   margin: 0;
   padding-bottom: 25px;
-  border-bottom: 1px solid $grey-color;
+  border-bottom: 1px solid $product-border;
 
   font-size: 13px;
 }
@@ -34,6 +34,6 @@
   margin-top: 15px;
   margin-bottom: 30px;
 
-  font-weight: $fw-bold;
-  font-size: $fs-small;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-small;
 }

@@ -9,9 +9,9 @@
   margin: 0 auto;
   padding: 0 50px;
 
-  font-size: $fs-big;
-  line-height: 30px;
-  font-weight: $fw-bold;
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: $font-weight-bold;
 }
 
 .modal__label {
@@ -21,7 +21,7 @@
     margin-bottom: 30px;
     padding: 9px 0;
 
-    border: 1px solid $black-color;
+    border: 1px solid $modal-border;
   }
 
 .modal__radio {
@@ -35,12 +35,12 @@
 
     font-size: 17px;
     line-height: 20px;
-    font-weight: $fw-bold;
+    font-weight: $font-weight-bold;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: $white-color;
+    color: $modal-btn;
 
-    background-color: $tiffany;
+    background-color: $modal-btn-background;
     border: none;
   }

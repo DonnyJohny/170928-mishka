@@ -6,8 +6,8 @@
   margin: 0;
   margin-bottom: 30px;
 
-  font-size: $fs-big;
-  line-height: 30px;
+  font-size: $font-size-big;
+  line-height: $line-height-big;
 }
 
 .reviews__item {
@@ -17,8 +17,8 @@
 .reviews__text {
   margin: 0;
   margin-bottom: 35px;
-  font-size: $fs-small;
-  line-height: 30px;
+  font-size: $font-size-small;
+  line-height: $line-height-big;
 }
 
 .reviews__author {
@@ -27,8 +27,7 @@
   margin-bottom: 15px;
 
   font-size: 18px;
-  line-height: 24px;
-  font-weight: $fw-bold;
+  font-weight: $font-weight-bold;
   font-style: normal;
 }
 
@@ -44,19 +43,19 @@
   margin-bottom: 35px;
   padding: 10px 0;
 
-  background-color: $white-color;
-  border: 2px solid $grey-color;
+  background-color: $review-color;
+  border: 2px solid $review-border;
 }
 
 .reviews__write-us {
   display: block;
   padding: 14px 0;
 
-  border: 2px solid $dark-brown;
+  border: 2px solid $btn-color;
   text-align: center;
   text-transform: uppercase;
-  font-weight: $fw-bold;
-  color: $dark-brown;
+  font-weight: $font-weight-bold;
+  color: $btn-color;
 
   text-decoration: none;
 }

@@ -3,19 +3,19 @@
   padding-right: 160px;
 
   font-size: 19px;
-  font-weight: $fw-bold;
+  font-weight: $font-weight-bold;
 
   &--interior {
-    background-color: $tiffany;
+    background-color: $page-header-interior;
   }
 
   &--toys {
-    background-color: $dark-tiffany;
+    background-color: $page-header-toys;
   }
 }
 
 .page-navigation__category {
-  color: $white-color;
+  color: $page-header-text;
 
   text-decoration: none;
 }
