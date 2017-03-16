@@ -1,0 +1,163 @@
+.order-form {
+  padding: 0 30px;
+}
+.order-form__block {
+  margin-bottom: 30px;
+}
+
+.order-form__subtitle {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 25px;
+
+  line-height: 20px;
+  color: $form-subtitle-color;
+
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 10px;
+
+    width: 197px;
+    height: 1px;
+
+    background-color: $form-subtitle-color;
+  }
+
+  &--mail {
+    &::before {
+      width: 180px;
+    }
+  }
+}
+
+.order-form__radio {
+  display: none;
+}
+
+.order-form__checkbox {
+  display: none;
+}
+
+.order-form__label{
+  position: relative;
+
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 0;
+
+  font-weight: $font-weight-bold;
+
+
+
+  &--radio {
+    padding-left: 62px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 37px;
+      height: 37px;
+
+      border: 2px solid $form-border;
+      border-radius: 50%;
+    }
+  }
+
+  &--checkbox {
+    padding-left: 62px;
+    margin-bottom: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 38px;
+      height: 38px;
+
+      border: 2px solid $form-border;
+    }
+  }
+
+  &--phone-icon {
+    &::before{
+      position: absolute;
+      content: "";
+      top: 23px;
+      right: 4px;
+
+      width: 25px;
+      height: 24px;
+
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  &--mail-icon {
+    &::before{
+      position: absolute;
+      content: "";
+      top: 23px;
+      right: 3px;
+
+      width: 32px;
+      height: 26px;
+
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+}
+
+.order-form__input {
+  width: 230px;
+  padding: 20px 15px;
+
+  border: none;
+  border-bottom: 2px solid $form-border;
+}
+
+.order-form__contacts {
+  display: block;
+  width: 205px;
+  border: none;
+  border-bottom: 2px solid $form-border;
+  padding: 20px 0;
+  padding-right: 40px;
+  padding-left: 15px;
+}
+
+.order-form__textarea {
+  width: 230px;
+  height: 108px;
+  padding: 15px;
+
+  border: 2px solid $form-border;
+
+  resize: none;
+}
+
+.order-form__btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 55px;
+  padding: 14px 0;
+
+  font-weight: $font-weight-bold;
+  color: $btn-color;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid $btn-color;
+  background-color: transparent;
+}

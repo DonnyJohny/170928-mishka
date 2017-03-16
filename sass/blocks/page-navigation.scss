@@ -1,0 +1,21 @@
+.page-navigation {
+  padding: 22px 30px;
+  padding-right: 160px;
+
+  font-size: 19px;
+  font-weight: $font-weight-bold;
+
+  &--interior {
+    background-color: $page-header-interior;
+  }
+
+  &--toys {
+    background-color: $page-header-toys;
+  }
+}
+
+.page-navigation__category {
+  color: $page-header-text;
+
+  text-decoration: none;
+}

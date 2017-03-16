@@ -1,0 +1,16 @@
+.logo {
+  margin: 0;
+  padding: 22px 0;
+
+  text-align: center;
+
+  background-color: $nav-background;
+  border-bottom: 1px solid $nav-border;
+}
+
+.logo__image {
+  margin: 0;
+
+  width: 86px;
+  height: 35px;
+}

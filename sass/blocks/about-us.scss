@@ -1,0 +1,105 @@
+.about-us {
+  padding: 0 30px;
+}
+
+.about-us__subtitle {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+}
+
+.about-us__item {
+  position: relative;
+
+  padding-top: 60px;
+  margin-bottom: 25px;
+
+  &--ecology::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 10px;
+
+    display: block;
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../img/icon-feature-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--style::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 2px;
+
+    display: block;
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-3.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--likes::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+
+    display: block;
+    width: 34px;
+    height: 29px;
+
+    background-image: url("../img/icon-feature-5.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--handmade::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+
+    display: block;
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-feature-2.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--support::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+
+    display: block;
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/icon-feature-4.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--present-box::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 10px;
+
+    display: block;
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icon-feature-6.svg");
+    background-repeat: no-repeat;
+  }
+}
+.about-us__description {
+    margin: 0;
+}

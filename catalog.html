@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="logo">
         <a href="#">
-          <img class="logo__image" src="img/logo.svg" width="86" height="35" alt="Логотип">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
       </div>
       <nav class="nav-dropdown">
@@ -28,14 +29,14 @@
         </ul>
       </nav>
     </header>
-    <div class="page-header">
+    <div class="page-header page-header--catalog">
       <h2 class="page-header__title">Каталог товаров</h2>
     </div>
     <main class="main-content">
       <div class="products-wrapper">
         <div class="product-card">
           <a href="#">
-            <img class="product-card__image" src="#" width="260" height="165" alt="Зайчик-попрыгайчик">
+            <img class="product-card__image" src="img/photo-1-mobile@1x.jpg" width="260" height="165" alt="Зайчик-попрыгайчик">
           </a>
           <h3 class="product-card__title">
             <a class="product-card__link" href="#">Зайчик-попрыгайчик</a>
@@ -45,7 +46,7 @@
         </div>
         <div class="product-card">
           <a href="#">
-            <img class="product-card__image" src="#" width="260" height="165" alt="Корзинка для белья">
+            <img class="product-card__image" src="img/photo-2-mobile@1x.jpg" width="260" height="165" alt="Корзинка для белья">
           </a>
           <h3 class="product-card__title">
             <a class="product-card__link" href="#">Корзинка для белья</a>
@@ -55,7 +56,7 @@
         </div>
         <div class="product-card">
           <a href="#">
-            <img class="product-card__image" src="#" width="260" height="165" alt="Корзина для игрушек">
+            <img class="product-card__image" src="img/photo-3-mobile@1x.jpg" width="260" height="165" alt="Корзина для игрушек">
           </a>
           <h3 class="product-card__title">
             <a class="product-card__link" href="#">Большая корзина для игрушек</a>
@@ -64,12 +65,14 @@
           <a class="product-card__price">1500 руб.</a>
         </div>
       </div>
-      <div class="video">
-        <h3 class="video__title">Процесс производства</h3>
-        <video class="video__video" poster="#" src="#" width="260" height="150" alt="Создание корзины"></video>
-        <button class="vide__button" type="button"><img class="video__button__img" src="#" width="102" height="68" alt="Запуск видео"></button>
-        <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="video__btn" href="#">Заказать</a>
+      <div class="video-wrapper">
+        <div class="video">
+          <h3 class="video__title">Процесс производства</h3>
+          <video class="video__video" poster="img/video-mobile@1x.jpg" src="#" width="260" height="150" alt="Создание корзины"></video>
+          <button class="video__play" type="button"><img class="video__button__img" src="img/icon-play.svg" width="101" height="77" alt="Запуск видео"></button>
+          <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="video__btn" href="#">Заказать</a>
+        </div>
       </div>
     </main>
     <footer class="main-footer">

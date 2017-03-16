@@ -1,0 +1,39 @@
+.product-card {
+  margin-bottom: 30px;
+  padding: 0 25px;
+
+  border: 1px solid $product-border;
+}
+.product-card__image {
+  width: 260px;
+  height: 165px;
+  margin-left: -25px;
+  margin-bottom: 25px;
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.product-card__link {
+  color: $product-link;
+  text-decoration: none;
+}
+
+.product-card__description {
+  margin: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $product-border;
+
+  font-size: 13px;
+}
+.product-card__price {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+  font-weight: $font-weight-bold;
+  font-size: $font-size-small;
+}
