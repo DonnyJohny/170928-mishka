@@ -1,16 +1,19 @@
 .page-navigation {
   padding: 22px 30px;
   padding-right: 160px;
+  margin: 0;
 
   font-size: 19px;
   font-weight: $font-weight-bold;
 
   &--interior {
     background-color: $page-header-interior;
+    margin: 0 ;
   }
 
   &--toys {
     background-color: $page-header-toys;
+    margin: 0 ;
   }
 }
 
@@ -18,4 +21,29 @@
   color: $page-header-text;
 
   text-decoration: none;
+  margin: 0;
+}
+
+@media #{$tablet-width} {
+  .page-navigation {
+    min-height: 55px;
+    width: 120px;
+    margin: 0;
+    padding: 30px 0;
+    padding-left: 35px;
+    padding-right: 175px;
+
+    font-size: 0;
+    line-height: 0;
+  }
+  .page-navigation__category{
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media #{$desktop-width} {
+  .page-navigation {
+    width: 135px;
+    padding-right: 350px;
+  }
 }

@@ -4,9 +4,11 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 
+@import "blocks/main-header";
 @import "blocks/logo.scss";
 @import "blocks/nav-dropdown.scss";
 @import "blocks/page-header.scss";
+@import "blocks/page-navigation-wrapper.scss";
 @import "blocks/page-navigation.scss";
 @import "blocks/week-product.scss";
 @import "blocks/about-us.scss";

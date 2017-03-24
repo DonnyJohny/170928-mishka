@@ -9,7 +9,9 @@
     padding-bottom: 130px;
 
     background-image: url("../img/hero-mobile@1x.jpg");
-    background-position: 50% 354px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 50% 30px;
   }
 
   &--catalog {
@@ -31,4 +33,32 @@
   font-size: 27px;
   line-height: $line-height-big;
   font-weight: $font-weight-bold;
+}
+
+@media #{$tablet-width} {
+  .page-header--index {
+    padding: 0;
+    padding-top: 155px;
+    padding-bottom: 365px;
+    background-image: url("../img/hero-mobile@tablet.jpg");
+    background-size: 100%;
+    background-position: 0 0;
+  }
+  .page-header__title {
+    padding: 0 130px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+@media #{$desktop-width} {
+  .page-header--index {
+    background-image: url("../img/hero-mobile@desktop.jpg");
+    background-size: 100%;
+    background-position: 0 0;
+  }
+  .page-header__title {
+    padding: 0 265px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

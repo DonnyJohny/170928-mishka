@@ -1,0 +1,12 @@
+@media #{$tablet-width}{
+  .main-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media #{$desktop-width}{
+  .main-header {
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+  }
+}

@@ -11,3 +11,15 @@ body {
 
   background-color: $main-background;
 }
+
+@media #{$tablet-width}{
+  body {
+    width: 768px;
+  }
+}
+
+@media #{$desktop-width}{
+  body {
+    width: 1150px;
+  }
+}

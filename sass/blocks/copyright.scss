@@ -1,17 +1,15 @@
 .copyright {
+  position: relative;
   padding-top: 25px;
   padding-bottom: 30px;
 }
 
-.copyright__text {
+.copyright__link {
+  position: relative;
   padding-left: 40px;
 
   font-size: 19px;
   font-weight: $font-weight-bold;
-}
-.copyright__link {
-  position: relative;
-  font-size: 0;
 
   &::before {
     position: absolute;
@@ -22,5 +20,32 @@
     height: 34px;
 
     background-image: url("../img/logo-htmlacademy.svg");
+  }
+}
+
+@media #{$tablet-width} {
+  .copyright{
+    display: inline-block;
+    vertical-align: top;
+    width: 185px;
+    margin: 0;
+    padding: 0;
+    min-height: 45px;
+  }
+  .copyright__link{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 0;
+
+    &::before {
+      left: 157px;
+    }
+  }
+}
+@media #{$desktop-width} {
+  .copyright{
+    width: 175px;
   }
 }

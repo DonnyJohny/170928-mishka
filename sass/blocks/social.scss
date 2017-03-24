@@ -48,3 +48,35 @@
   background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
 }
+
+@media #{$tablet-width} {
+  .social {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    margin: 0;
+    padding: 0 65px;
+
+    border: none;
+  }
+  .social__item {
+    width: 60px;
+    min-height: 45px;
+    padding: 0;
+  }
+  .social__link--instagramm::before {
+    left: 95px;
+  }
+  .social__link--fb::before {
+    left: 155px;
+  }
+  .social__link--twitter::before {
+    left: 215px;
+  }
+}
+@media #{$desktop-width} {
+  .social {
+    margin-right: 162px;
+    padding: 0 85px;
+  }
+}
