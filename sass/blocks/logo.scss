@@ -14,18 +14,23 @@
   height: 35px;
 }
 
-@media #{$tablet-width}{
+@media #{$tablet-width} {
   .logo {
-    width: 370px;
+    width: 319px;
     min-height: 88px;
     order: 1;
     border-color: #e7e7e7;
+    padding-left: 50px;
   }
 }
-@media #{$desktop-width}{
+
+@media #{$desktop-width} {
   .logo {
   width: 280px;
   order: 2;
-  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  flex-grow: 1;
+
+  padding: 0;
   }
 }

@@ -66,3 +66,58 @@
   text-decoration: none;
   color: $btn-color;
 }
+
+@media #{$tablet-width} {
+  .video {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 668px;
+    padding-top: 0;
+  }
+  .video__title {
+    order: 1;
+  }
+  .video__video{
+    width: 668px;
+    height: 456px;
+    order: 0;
+  }
+  .video__play {
+    top: 194px;
+    left: 282px;
+  }
+  .video__text {
+    order: 2;
+
+    font-size: 15px;
+  }
+  .video__btn {
+    order: 3;
+  }
+}
+
+@media #{$desktop-width} {
+  .video {
+    position: relative;
+    width: 235px;
+    min-height: 295px;
+    padding-top: 100px;
+    padding-left: 757px;
+    padding-right: 58px;
+    padding-bottom: 60px;
+  }
+  .video__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 680px;
+    height: 455px;
+    margin: 0;
+  }
+  .video__btn {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+}

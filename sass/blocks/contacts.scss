@@ -1,8 +1,10 @@
 .contacts {
-  padding: 0 30px;
   padding-top: 35px;
 }
 
+.contacts__wrapper {
+  padding: 0 30px;
+}
 .contacts__title {
   margin: 0;
   margin-bottom: 35px;
@@ -11,7 +13,6 @@
   line-height: $line-height-big;
   font-weight: $font-weight-bold;
 }
-
 .contacts__table {
   margin-bottom: 50px;
 
@@ -19,16 +20,13 @@
   line-height: $line-height-big;
   color: $contacts-text;
 }
-
 .contacts__table-row {
   vertical-align: top;
 }
-
 .contacts__content {
   width: 75px;
   padding-bottom: 30px;
 }
-
 .contacts__email {
   border-bottom: 1px solid $dark-tiffany;
   padding-bottom: 5px;
@@ -36,14 +34,11 @@
 
   text-decoration: none;
 }
-
 .contacts__map {
   width: 320px;
   height: 450px;
-  margin-left: -30px;
   margin-bottom: 39px;
 }
-
 .contacts__write {
   display: block;
   margin-bottom: 39px;
@@ -58,75 +53,78 @@
   text-decoration: none;
 }
 
-@media #{$tablet-width}{
-  .contacts{
+@media #{$tablet-width} {
+  .contacts {
     padding-top: 60px;
-    padding-right: 50px;
-    padding-left: 50px;
 
     text-align: center;
   }
-  .contacts__title{
+  .contacts__wrapper {
+    padding: 0 50px;
+  }
+  .contacts__title {
     display: block;
     font-size: 43px;
     line-height: 50px;
     text-align: left;
   }
-  .contacts__table tbody{
+  .contacts__table tbody {
     display: flex;
     text-align: left;
   }
-  .contacts__table-row{
+  .contacts__table-row {
     width: 290px;
   }
-  .contacts__map{
+  .contacts__map {
     width: 768px;
     height: 457px;
-    margin-left: -50px;
+    margin: 0;
     margin-bottom: 50px;
   }
-  .contacts__write{
+  .contacts__write {
     display: inline-block;
     padding: 14px 36px;
     margin-bottom: 55px;
   }
 }
-@media #{$desktop-width}{
+
+@media #{$desktop-width} {
   .contacts {
     position: relative;
     display: flex;
-    width: 350px;
+    width: 290px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 225px;
     padding-right: 50px;
   }
-  .contacts__title{
-    width: 350px;
+  .contacts__title {
+    width: 290px;
 
     font-size: 53px;
     line-height: 57px;
   }
   .contacts__table {
     display: block;
-    width: 300px;
+    width: 290px;
     margin-bottom: 77px;
   }
-  .contacts__table tbody{
+  .contacts__table tbody {
     display: block;
   }
   .contacts__content {
     width: 75px;
   }
-  .contacts__map{
+  .contacts__map {
     position: absolute;
     top: 0;
-    right: -525px;
+    left: 575px;
     width: 525px;
     height: 455px;
+    margin: 0;
   }
-  .contacts__write{
-    width: 350px;
+  .contacts__write {
+    width: 290px;
     margin: 0;
     margin-bottom: 105px;
   }

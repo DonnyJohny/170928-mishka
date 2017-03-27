@@ -8,26 +8,33 @@
   <body>
     <header class="main-header">
       <div class="logo">
-        <a href="#">
-          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
-        </a>
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
       </div>
-      <nav class="nav-dropdown">
-        <ul class="nav-dropdown__list">
-          <li class="nav-dropdown__item">
-            <a class="nav-dropdown__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="nav-dropdown__item">
-            <a class="nav-dropdown__link" href="#">Вязание на заказ</a>
-          </li>
-          <li class="nav-dropdown__item">
-            <input class="nav-dropdown__input nav-dropdown__input--search" type="text" placeholder="Поиск по сайту">
-          </li>
-          <li class="nav-dropdown__item">
-            <a class="nav-dropdown__link nav-dropdown__link--basket" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav-dropdown nav-dropdown--categories">
+        <li class="nav-dropdown__item">
+          <a class="nav-dropdown__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="nav-dropdown__item">
+          <a class="nav-dropdown__link" href="#">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="nav-dropdown nav-dropdown--shop">
+        <li class="nav-dropdown__search">
+          <input class="nav-dropdown__input nav-dropdown__input--search" type="text" placeholder="Поиск по сайту">
+        </li>
+        <li class="nav-dropdown__basket">
+          <a class="nav-dropdown__link nav-dropdown__link--basket" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="nav-dropdown nav-dropdown--new">
+        <li class="nav-dropdown__item">
+          <a class="nav-dropdown__link" href="#">Новое поступление</a>
+        </li>
+        <li class="nav-dropdown__item">
+          <a class="nav-dropdown__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+      <span class="main-header__delivery">Бесплатная доставка по России</span>
     </header>
     <div class="page-header page-header--catalog">
       <h2 class="page-header__title">Каталог товаров</h2>
@@ -35,7 +42,7 @@
     <main class="main-content">
       <div class="products-wrapper">
         <div class="product-card">
-          <a href="#">
+          <a class="product-card__image-link" href="#">
             <img class="product-card__image" src="img/photo-1-mobile@1x.jpg" width="260" height="165" alt="Зайчик-попрыгайчик">
           </a>
           <h3 class="product-card__title">
@@ -45,7 +52,7 @@
           <a class="product-card__price">1200 руб.</a>
         </div>
         <div class="product-card">
-          <a href="#">
+          <a class="product-card__image-link" href="#">
             <img class="product-card__image" src="img/photo-2-mobile@1x.jpg" width="260" height="165" alt="Корзинка для белья">
           </a>
           <h3 class="product-card__title">
@@ -55,7 +62,7 @@
           <a class="product-card__price">690 руб.</a>
         </div>
         <div class="product-card">
-          <a href="#">
+          <a class="product-card__image-link" href="#">
             <img class="product-card__image" src="img/photo-3-mobile@1x.jpg" width="260" height="165" alt="Корзина для игрушек">
           </a>
           <h3 class="product-card__title">
@@ -76,17 +83,16 @@
       </div>
     </main>
     <footer class="main-footer">
+      <a class="main-footer__logo" href="#">Логотип Мишка</a>
       <ul class="social">
         <li class="social__item"><a class="social__link social__link--instagramm" href="#">Instagramm</a></li>
         <li class="social__item"><a class="social__link social__link--fb" href="#">fb</a></li>
         <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
       </ul>
       <div class="copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="#">HTML academy</a>
+        <a class="copyright__link" href="#">Разработано</a>
       </div>
-    </footer>
-    <div class="modal">
+    </footer>    <div class="modal">
       <form class="modal__form">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>

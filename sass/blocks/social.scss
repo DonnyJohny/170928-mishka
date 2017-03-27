@@ -1,52 +1,59 @@
 .social {
-  position: relative;
-
   padding: 0;
   border-bottom: 1px solid $footer-border;
 
   font-size: 0;
 }
-
 .social__item {
   display: inline-block;
-  width: 75px;
-  height: 25px;
+  vertical-align: top;
+}
+.social__link {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: top;
+  width: 86px;
   padding-top: 25px;
   padding-bottom: 25px;
-}
 
-.social__link--instagramm::before {
-  position: absolute;
-  content: "";
-  left: 55px;
+  line-height: 30px;
 
-  width: 22px;
-  height: 21px;
+  &--instagramm::before {
+    position: absolute;
+    content: "";
+    right: 0;
 
-  background-image: url("../img/icon-insta.svg");
-  background-repeat: no-repeat;
-}
-.social__link--fb::before {
-  position: absolute;
-  content: "";
-  left: 120px;
+    width: 22px;
+    height: 21px;
 
-  width: 15px;
-  height: 29px;
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+  }
 
-  background-image: url("../img/icon-fb.svg");
-  background-repeat: no-repeat;
-}
-.social__link--twitter::before {
-  position: absolute;
-  content: "";
-  left: 175px;
+  &--fb::before {
+    position: absolute;
+    content: "";
+    left: 30px;
 
-  width: 24px;
-  height: 20px;
+    width: 15px;
+    height: 29px;
 
-  background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--twitter::before {
+    position: absolute;
+    content: "";
+    left: 0;
+
+    width: 24px;
+    height: 20px;
+
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media #{$tablet-width} {
@@ -64,16 +71,22 @@
     min-height: 45px;
     padding: 0;
   }
+  .social__link {
+    width: 60px;
+    height: 45px;
+    padding: 0;
+  }
   .social__link--instagramm::before {
-    left: 95px;
+    left: 15px;
   }
   .social__link--fb::before {
-    left: 155px;
+    left: 25px;
   }
   .social__link--twitter::before {
-    left: 215px;
+    left: 15px;
   }
 }
+
 @media #{$desktop-width} {
   .social {
     margin-right: 162px;

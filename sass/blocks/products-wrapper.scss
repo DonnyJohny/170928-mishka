@@ -2,3 +2,10 @@
   padding: 0 30px;
   padding-top: 30px;
 }
+
+@media #{$tablet-width} {
+  .products-wrapper{
+    padding: 0 50px;
+    padding-top: 80px;
+  }
+}

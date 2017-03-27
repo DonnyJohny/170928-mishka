@@ -1,12 +1,27 @@
-@media #{$tablet-width}{
+.main-header__delivery {
+  display: none;
+}
+
+@media #{$tablet-width} {
   .main-header {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .main-header__delivery {
+    display: block;
+    order: 5;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-right: 50px;
+
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
-@media #{$desktop-width}{
+
+@media #{$desktop-width} {
   .main-header {
     justify-content: space-between;
-    border-bottom: 1px solid #e7e7e7;
   }
 }
