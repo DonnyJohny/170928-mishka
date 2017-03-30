@@ -1,6 +1,8 @@
 .reviews {
   position: relative;
 
+  width: 260px;
+  margin: 0 auto;
   padding: 0 30px;
 }
 .reviews__title {
@@ -20,8 +22,7 @@
   line-height: $line-height-big;
 }
 .reviews__author {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   margin-bottom: 15px;
 
   font-size: 18px;
@@ -29,9 +30,7 @@
   font-style: normal;
 }
 .reviews__nickname {
-  width: 100%;
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -61,6 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 668px;
     padding: 0 50px;
     padding-top: 80px;
     padding-bottom: 85px;
@@ -100,6 +100,7 @@
   .reviews__btn {
     width: 88px;
     margin: 0;
+    padding: 0;
 
     border: none;
   }
@@ -115,7 +116,8 @@
 
 @media #{$desktop-width} {
   .reviews {
-    padding-left: 175px;
+    width: 876px;
+    padding-left: 225px;
     padding-bottom: 95px;
   }
   .reviews__title {

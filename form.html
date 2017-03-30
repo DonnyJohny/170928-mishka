@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -22,12 +23,12 @@
         <li class="nav-dropdown__search">
           <input class="nav-dropdown__input nav-dropdown__input--search" type="text" placeholder="Поиск по сайту">
         </li>
-        <li class="nav-dropdown__basket">
+        <li class="nav-dropdown__item nav-dropdown__item--basket">
           <a class="nav-dropdown__link nav-dropdown__link--basket" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
       <ul class="nav-dropdown nav-dropdown--new">
-        <li class="nav-dropdown__item">
+        <li class="nav-dropdown__item nav-dropdown__item--new">
           <a class="nav-dropdown__link" href="#">Новое поступление</a>
         </li>
         <li class="nav-dropdown__item">
@@ -41,8 +42,8 @@
     </div>
     <main class="main-content">
       <div class="main-block">
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order-form" name="order-form" method="get">
+          <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <div class="order-form__block">
             <h4 class="order-form__subtitle">Тип</h4>
             <div class="order-form__wrapper order-form__wrapper--radio">
@@ -56,50 +57,58 @@
               </label>
             </div>
           </div>
-          <div class="order-form__block">
-            <h4 class="order-form__subtitle">Цвет</h4>
-            <div class="order-form__wrapper order-form__wrapper--checkbox">
-              <label class="order-form__label order-form__label--checkbox">
-                <input class="order-form__checkbox" type="checkbox" name="color" value="white">
-                Белый
-              </label>
-              <label class="order-form__label order-form__label--checkbox">
-                <input class="order-form__checkbox" type="checkbox" name="color" value="grey">
-                Серый
-              </label>
-              <label class="order-form__label order-form__label--checkbox">
-                <input class="order-form__checkbox" type="checkbox" name="color" value="Tiffany">
-                "Тиффани"
-              </label>
-              <label class="order-form__label order-form__label--checkbox">
-                <input class="order-form__checkbox" type="checkbox" name="color" value="black">
-                Черный
-              </label>
-              <label class="order-form__label order-form__label--checkbox">
-                <input class="order-form__checkbox" type="checkbox" name="color" value="pink">
-                Розовый
-              </label>
-              <label class="order-form__label order-form__label--checkbox">
-                <input class="order-form__checkbox" type="checkbox" name="color" value="orange">
-                Оранжевый
-              </label>
+          <div class="order-form__block-wrapper">
+            <div class="order-form__block">
+              <h4 class="order-form__subtitle">Цвет</h4>
+              <div class="order-form__wrapper order-form__wrapper--checkbox">
+                <label class="order-form__label order-form__label--checkbox">
+                  <input class="order-form__checkbox" type="checkbox" name="color" value="white">
+                  Белый
+                </label>
+                <label class="order-form__label order-form__label--checkbox">
+                  <input class="order-form__checkbox" type="checkbox" name="color" value="grey">
+                  Серый
+                </label>
+                <label class="order-form__label order-form__label--checkbox">
+                  <input class="order-form__checkbox" type="checkbox" name="color" value="Tiffany">
+                  "Тиффани"
+                </label>
+                <label class="order-form__label order-form__label--checkbox">
+                  <input class="order-form__checkbox" type="checkbox" name="color" value="black">
+                  Черный
+                </label>
+                <label class="order-form__label order-form__label--checkbox">
+                  <input class="order-form__checkbox" type="checkbox" name="color" value="pink">
+                  Розовый
+                </label>
+                <label class="order-form__label order-form__label--checkbox">
+                  <input class="order-form__checkbox" type="checkbox" name="color" value="orange">
+                  Оранжевый
+                </label>
+              </div>
             </div>
           </div>
           <div class="order-form__block">
             <h4 class="order-form__subtitle">ФИО</h4>
             <div class="order-form__wrapper order-form__wrapper--input">
-              <label class="order-form__label">
-                Имя:
-                <input class="order-form__input order-form__input--name" type="text" name="name" placeholder="Введите ваше имя*" required>
-              </label>
-              <label class="order-form__label">
-                Фамилия:
-                <input class="order-form__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
-              </label>
-              <label class="order-form__label">
-                Отчество:
-                <input class="order-form__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
-              </label>
+              <div class="order-form__input-wrapper">
+                <label class="order-form__label" for="name">
+                  Имя:
+                </label>
+                <input class="order-form__input" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="order-form__input-wrapper">
+                <label class="order-form__label" for="surname">
+                  Фамилия:
+                </label>
+                <input class="order-form__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="order-form__input-wrapper">
+                <label class="order-form__label">
+                  Отчество:
+                </label>
+                <input class="order-form__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+              </div>
             </div>
           </div>
           <div class="order-form__block">
@@ -128,14 +137,16 @@
       </div>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo" href="#">Логотип Мишка</a>
-      <ul class="social">
-        <li class="social__item"><a class="social__link social__link--instagramm" href="#">Instagramm</a></li>
-        <li class="social__item"><a class="social__link social__link--fb" href="#">fb</a></li>
-        <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
-      </ul>
-      <div class="copyright">
-        <a class="copyright__link" href="#">Разработано</a>
+      <div class="main-footer-wrapper">
+        <a class="main-footer__logo" href="#">Логотип Мишка</a>
+        <ul class="social">
+          <li class="social__item"><a class="social__link social__link--instagramm" href="#">Instagramm</a></li>
+          <li class="social__item"><a class="social__link social__link--fb" href="#">fb</a></li>
+          <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
+        </ul>
+        <div class="copyright">
+          <a class="copyright__link" href="#">Разработано</a>
+        </div>
       </div>
     </footer>
   </body>

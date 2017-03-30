@@ -1,6 +1,16 @@
 @media #{$tablet-width}{
   .page-navigation-wrapper {
     display: flex;
+    width: 668px;
     padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+@media #{$desktop-width}{
+  .page-navigation-wrapper {
+    display: flex;
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
   }
 }

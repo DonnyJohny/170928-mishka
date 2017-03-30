@@ -9,28 +9,24 @@
   border-bottom: 1px solid $nav-border;
 }
 .logo__image {
-  margin: 0;
   width: 86px;
   height: 35px;
 }
 
 @media #{$tablet-width} {
   .logo {
-    width: 319px;
+    width: 370px;
     min-height: 88px;
-    order: 1;
+    order: 0;
     border-color: #e7e7e7;
-    padding-left: 50px;
   }
 }
 
 @media #{$desktop-width} {
   .logo {
   width: 280px;
-  order: 2;
+  order: 1;
   border-bottom: 1px solid #e7e7e7;
   flex-grow: 1;
-
-  padding: 0;
   }
 }

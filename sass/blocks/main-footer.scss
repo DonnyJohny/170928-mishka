@@ -1,15 +1,10 @@
 .main-footer {
-  padding: 0 30px;
   background-color: $footer-background;
 }
 .main-footer__logo {
   display: none;
-
 }
 @media #{$tablet-width}{
-  .main-footer {
-    padding: 48px 50px;
-  }
   .main-footer__logo {
     display: inline-block;
     vertical-align: top;

@@ -1,18 +1,18 @@
-.video-wrapper {
+.main-footer-wrapper {
   width: 260px;
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 @media #{$tablet-width} {
-  .video-wrapper {
+  .main-footer-wrapper{
     width: 668px;
-    padding: 0 50px;
+    padding: 50px 50px;
   }
 }
-
 @media #{$desktop-width} {
-  .video-wrapper {
+  .main-footer-wrapper{
     width: 1050px;
+    padding: 50px 50px;
   }
 }

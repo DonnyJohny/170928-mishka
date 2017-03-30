@@ -1,7 +1,4 @@
 body {
-  width: 320px;
-  margin: 0 auto;
-
   font-style: normal;
   font-weight: $font-weight-normal;
   font-size: $font-size;
@@ -14,12 +11,6 @@ body {
 
 @media #{$tablet-width}{
   body {
-    width: 768px;
-  }
-}
-
-@media #{$desktop-width}{
-  body {
-    width: 1150px;
+    margin: 0 auto;
   }
 }

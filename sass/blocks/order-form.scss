@@ -1,10 +1,12 @@
-.order-form {
-  padding: 0 30px;
-}
 .order-form__block {
-  margin-bottom: 30px;
+  width: 260px;
+  padding: 15px 30px;
+  margin: 0 auto;
 }
-
+.order-form__text {
+  width: 260px;
+  margin: 0 auto;
+}
 .order-form__subtitle {
   position: relative;
 
@@ -52,8 +54,6 @@
   padding: 10px 0;
 
   font-weight: $font-weight-bold;
-
-
 
   &--radio {
     padding-left: 62px;
@@ -163,14 +163,21 @@
 }
 
 @media #{$tablet-width} {
-  .order-form {
-    padding: 0 50px;
+  .order-form__block-wrapper {
+    background-color: #f1f1f1;
   }
   .order-form__block {
     display: flex;
+    width: 668px;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-bottom: 50px;
+    padding: 25px 50px;
+    margin: 0 auto;
+  }
+  .order-form__text {
+    width: 600px;
+    padding-top: 70px;
+    padding-bottom: 30px;
   }
   .order-form__wrapper {
     &--checkbox {
@@ -182,13 +189,13 @@
       flex-grow: 1;
       width: 493px;
     }
-    &--contacts {
-      width: 438px;
-    }
   }
-
+  .order-form__input-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+  }
   .order-form__subtitle {
-    width: 175px;
+    width: 167px;
     margin: 0;
 
     &::before {
@@ -199,7 +206,7 @@
   .order-form__label {
 
     &--radio {
-      width: 350px;
+      width: 100%;
     }
 
     &--checkbox {
@@ -208,19 +215,21 @@
   }
   .order-form__input {
     margin-left: 25px;
-    width: 348px;
-    &--name {
-      width: 390px;
-    }
+    width: 330px;
+    flex-grow: 1;
+  }
+  .order-form__wrapper--contacts {
+    width: 446px;
   }
   .order-form__contacts {
-    width: 100%;
+    width: 391px;
   }
   .order-form__textarea {
     width: 459px;
   }
   .order-form__btn {
     width: auto;
+    max-width: 230px;
     order: -1;
     padding: 14px 29px;
   }
@@ -230,6 +239,9 @@
 }
 
 @media #{$desktop-width} {
+  .order-form__block {
+    width: 1050px;
+  }
   .order-form__wrapper {
     &--checkbox {
       width: 726px;
@@ -239,12 +251,21 @@
       margin-right: 170px;
     }
   }
+  .order-form__input-wrapper {
+    width: 700px;
+  }
   .order-form__input {
     margin-left: 25px;
     width: 555px;
     &--name {
       width: 600px;
     }
+  }
+  .order-form__wrapper--contacts {
+    width: 700px;
+  }
+  .order-form__contacts {
+    width: 645px;
   }
   .order-form__textarea {
     width: 666px;

@@ -1,4 +1,6 @@
 .about-us {
+  width: 260px;
+  margin: 0 auto;
   padding: 0 30px;
 }
 .about-us__subtitle {
@@ -111,6 +113,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 668px;
     padding: 0 50px;
     padding-top: 55px;
   }
@@ -128,6 +131,7 @@
 
 @media #{$desktop-width} {
   .about-us {
+    width: 700px;
     padding-top: 65px;
     padding: 0 225px;
   }

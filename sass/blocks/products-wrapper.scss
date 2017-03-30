@@ -1,11 +1,19 @@
 .products-wrapper {
+  width: 260px;
   padding: 0 30px;
   padding-top: 30px;
+  margin: 0 auto;
 }
 
 @media #{$tablet-width} {
   .products-wrapper{
+    width: 668px;
     padding: 0 50px;
     padding-top: 80px;
+  }
+}
+@media #{$desktop-width} {
+  .products-wrapper {
+    width: 1050px;
   }
 }

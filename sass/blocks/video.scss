@@ -11,8 +11,8 @@
   position: relative;
 
   margin: 0;
-  margin-left: 87px;
-  margin-right: 30px;
+  padding-left: 90px;
+  padding-right: 30px;
   margin-bottom: 25px;
 
   font-size: $font-size;
@@ -77,6 +77,7 @@
   }
   .video__title {
     order: 1;
+    padding-left: 105px;
   }
   .video__video{
     width: 668px;
@@ -103,9 +104,15 @@
     width: 235px;
     min-height: 295px;
     padding-top: 100px;
-    padding-left: 757px;
-    padding-right: 58px;
+    padding-left: 760px;
+    padding-right: 55px;
     padding-bottom: 60px;
+  }
+  .video__title {
+    padding: 0;
+  }
+  .video__text {
+    padding: 0;
   }
   .video__video {
     position: absolute;
@@ -117,6 +124,7 @@
     margin: 0;
   }
   .video__btn {
+    width: 231px;
     margin-top: auto;
     margin-bottom: 0;
   }
