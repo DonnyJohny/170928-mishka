@@ -50,7 +50,10 @@
     order: 2;
     width: 396px;
     padding-left: 50px;
+
+    background-color: $page-header-background;
     }
+
     &--shop {
     display: flex;
     order: 1;
@@ -72,6 +75,10 @@
     &--basket {
       flex-grow: 1;
       text-align: right;
+    }
+
+    &--category {
+      background-color: $page-header-background;
     }
   }
   .nav-dropdown__link {
@@ -108,6 +115,7 @@
   .nav-dropdown {
     &--categories {
       order: 0;
+      background-color: #ffffff;
       border-bottom: 1px solid #e7e7e7;
     }
 
@@ -122,6 +130,8 @@
       order: 3;
       width: 525px;
       padding-left: 50px;
+
+      background-color: $page-header-background;
     }
   }
   .nav-dropdown__item {
@@ -133,8 +143,17 @@
       border: none;
     }
 
+    &--category {
+      background-color: #ffffff;
+    }
+
     &--new {
       border: none;
+      background-color: $page-header-background;
+    }
+
+    &--sale {
+      background-color: $page-header-background;
     }
   }
 }

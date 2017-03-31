@@ -1,3 +1,10 @@
 .page-header-wrapper {
   background-color: #fbfbfb;
+
+  &--catalog {
+    background-color: $page-header-background
+  }
+  &--form {
+    background-color: $page-header-background
+  }
 }

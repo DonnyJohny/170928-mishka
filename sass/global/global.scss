@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+
   font-style: normal;
   font-weight: $font-weight-normal;
   font-size: $font-size;
@@ -8,9 +10,8 @@ body {
 
   background-color: $main-background;
 }
-
-@media #{$tablet-width}{
+@media #{$tablet-width} {
   body {
-    margin: 0 auto;
+    background-color: #fbfbfb;
   }
 }

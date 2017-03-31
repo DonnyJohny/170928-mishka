@@ -4,6 +4,8 @@
 
   width: 320px;
   margin: 0 auto;
+
+  background-color: #ffffff;
 }
 .main-header__delivery {
   display: none;
@@ -19,13 +21,15 @@
   .main-header__delivery {
     display: block;
     order: 4;
-    margin-left: auto;
+    flex-grow: 1;
     padding-top: 20px;
     padding-right: 50px;
 
     font-size: 15px;
     font-weight: $font-weight-bold;
     line-height: 24px;
+    text-align: right;
+    background-color: $page-header-background;
   }
 }
 
