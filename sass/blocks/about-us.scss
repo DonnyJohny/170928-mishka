@@ -114,8 +114,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 668px;
-    padding: 0 50px;
     padding-top: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .about-us__subtitle {
     width: 100%;
@@ -132,8 +133,9 @@
 @media #{$desktop-width} {
   .about-us {
     width: 700px;
-    padding-top: 65px;
-    padding: 0 225px;
+    padding-top: 30px;
+    padding-left: 225px;
+    padding-right: 225px;
   }
   .about-us__subtitle {
     font-size: 53px;

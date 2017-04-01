@@ -32,8 +32,9 @@
   display: inline-block;
   vertical-align: top;
   width: 210px;
-  padding: 0 25px;
   padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-bottom: 30px;
 
   font-weight: $font-weight-bold;
@@ -49,7 +50,6 @@
     flex-wrap: wrap;
     width: 274px;
     min-height: 309px;
-    padding: 0;
     padding-left: 360px;
     padding-right: 30px;
     padding-top: 25px;
@@ -78,8 +78,9 @@
   .product-card {
     width: 264px;
     min-height: 125px;
-    padding: 0 25px;
     padding-top: 487px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 25px;
   }
   .product-card__image {

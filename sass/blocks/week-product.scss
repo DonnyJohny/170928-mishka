@@ -3,8 +3,9 @@
 
   width: 260px;
   margin: 0 auto;
-  padding: 0 30px;
   padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 35px;
 
   color: $week-color;
@@ -69,8 +70,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 668px;
-    padding: 0 50px;
     padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 70px;
   }
   .week-product__name {
@@ -117,9 +119,7 @@
 @media #{$desktop-width} {
   .week-product {
     width: 1050px;
-    padding-left: 50px;
     padding-top: 120px;
-    padding-right: 50px;
     padding-bottom: 100px;
   }
   .week-product__name {

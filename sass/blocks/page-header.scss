@@ -2,8 +2,9 @@
 .page-header {
   width: 260px;
   margin: 0 auto;
-  padding: 0 30px;
   padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   text-align: center;
 
@@ -63,6 +64,7 @@
 @media #{$desktop-width} {
   .page-header {
     width: 1050px;
+
     &--index {
       background-image: url("../img/hero-mobile@desktop.jpg");
       background-size: 100%;
