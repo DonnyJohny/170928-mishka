@@ -1,4 +1,4 @@
-.main-header {
+.main-header__wrapper {
   display: flex;
   flex-wrap: wrap;
 
@@ -13,9 +13,14 @@
 
 @media #{$tablet-width} {
   .main-header {
+    background-color: #fbfbfb;
+
+    &--dark-background {
+      background-color: $page-header-background;
+    }
+  }
+  .main-header__wrapper {
     width: 768px;
-    border-left: 1px solid #e9e9e9;
-    border-right: 1px solid #e9e9e9;
   }
 
   .main-header__delivery {
@@ -29,12 +34,16 @@
     font-weight: $font-weight-bold;
     line-height: 24px;
     text-align: right;
-    background-color: $page-header-background;
+    background-color: #fbfbfb;
+
+    &--dark-background {
+      background-color: $page-header-background;
+    }
   }
 }
 
 @media #{$desktop-width} {
-  .main-header {
+  .main-header__wrapper {
     width: 1150px;
     justify-content: space-between;
   }
