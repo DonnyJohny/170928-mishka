@@ -82,6 +82,10 @@
       text-align: right;
     }
 
+    &--category {
+      background-color: #fbfbfb;
+    }
+
     &--dark-background {
       background-color: $page-header-background;
     }
@@ -135,6 +139,7 @@
       order: 3;
       width: 525px;
       padding-left: 50px;
+      background-color: #fbfbfb;
     }
 
     &--new-dark-background {
@@ -157,6 +162,11 @@
 
     &--new {
       border: none;
+      background-color: #fbfbfb;
+    }
+
+    &--sale {
+      background-color: #fbfbfb;
     }
 
     &--new-dark-background {
