@@ -10,8 +10,3 @@ body {
 
   background-color: $main-background;
 }
-@media #{$tablet-width} {
-  body {
-    background-color: #fbfbfb;
-  }
-}
