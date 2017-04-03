@@ -13,7 +13,7 @@
 
 @media #{$tablet-width} {
   .main-header {
-    background-color: #fbfbfb;
+    background-color: #f9f9f9;
 
     &--dark-background {
       background-color: $page-header-background;
@@ -34,7 +34,7 @@
     font-weight: $font-weight-bold;
     line-height: 24px;
     text-align: right;
-    background-color: #fbfbfb;
+    background-color: #f9f9f9;
 
     &--dark-background {
       background-color: $page-header-background;
