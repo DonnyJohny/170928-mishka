@@ -1,0 +1,135 @@
+.user-nav {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+  list-style: none;
+}
+.user-nav__link {
+  display: block;
+  padding: 27px 0;
+
+  color: $nav-color;
+  text-decoration: none;
+}
+.user-nav__item {
+  font-weight: $font-weight-bold;
+
+  background-color: $nav-background;
+  border-bottom: 1px solid $nav-border;
+}
+.user-nav__search {
+  border-bottom: 1px solid $nav-border;
+}
+.user-nav__basket {
+  padding: 27px 0;
+  border-bottom: 1px solid $nav-border;
+}
+.user-nav__input {
+  width: 215px;
+  margin: 0;
+  padding-top: 27px;
+  padding-left: 75px;
+  padding-right: 30px;
+  padding-bottom: 27px;
+
+  border: none;
+}
+.user-nav--new {
+  display: none;
+}
+
+@media #{$mobile-width-only} {
+  .user-nav--closed {
+    display: none;
+  }
+  .user-nav--closed .user-nav__item {
+    display: none;
+  }
+  .user-nav--closed .user-nav__input {
+    display: none;
+  }
+  .user-nav--opened {
+    position: absolute;
+    top: 238px;
+    left: 0;
+    z-index: 10;
+
+    height: 156px;
+  }
+  .user-nav--nojs {
+    display: block;
+  }
+  .user-nav--nojs .user-nav__item {
+    display: block;
+  }
+  .user-nav--nojs .user-nav__input {
+    display: block;
+  }
+}
+
+@media #{$tablet-width} {
+  .user-nav {
+
+    display: flex;
+    order: 1;
+    width: 346px;
+    min-height: 88px;
+    padding-right: 50px;
+    align-items: center;
+
+    text-align: right;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .user-nav__item {
+    padding: 0;
+    width: 167px;
+
+    border: none;
+    flex-grow: 1;
+    text-align: right;
+  }
+  .user-nav__link {
+    width: 100%;
+  }
+  .user-nav__search {
+    position: relative;
+    width: 82px;
+    min-height: 88px;
+
+    border: none;
+    border-left: 1px solid $nav-border;
+    border-right: 1px solid $nav-border;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/cart.svg");
+    }
+  }
+  .user-nav__input {
+    width: 82px;
+    padding: 0;
+    line-height: 88px;
+  }
+}
+
+@media #{$desktop-width} {
+  .user-nav {
+      order: 2;
+      border-bottom: 1px solid #e7e7e7;
+
+
+
+  }
+  .user-nav__item {
+    width: 185px;
+
+  }
+}
