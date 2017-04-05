@@ -12,35 +12,33 @@
         <div class="logo">
           <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </div>
-
-        <ul class="nav-dropdown nav-dropdown--categories">
-          <li class="nav-dropdown__item nav-dropdown__item--category">
-            <a class="nav-dropdown__link" href="#">Каталог товаров</a>
+        <button class="main-header__toggle main-header__toggle--nojs  main-header__toggle--closed" type="button">Открыть меню</button>
+        <ul class="main-nav main-nav--nojs main-nav--closed">
+          <li class="main-nav__item main-nav__item--category">
+            <a class="main-nav__link" href="#">Каталог товаров</a>
           </li>
-          <li class="nav-dropdown__item nav-dropdown__item--category">
-            <a class="nav-dropdown__link" href="#">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="nav-dropdown nav-dropdown--shop">
-          <li class="nav-dropdown__search">
-            <input class="nav-dropdown__input nav-dropdown__input--search" type="text" placeholder="Поиск по сайту">
-          </li>
-          <li class="nav-dropdown__item nav-dropdown__item--basket">
-            <a class="nav-dropdown__link nav-dropdown__link--basket" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item main-nav__item--category">
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="nav-dropdown nav-dropdown--new">
-          <li class="nav-dropdown__item nav-dropdown__item--new">
-            <a class="nav-dropdown__link" href="#">Новое поступление</a>
+        <ul class="user-nav user-nav--nojs user-nav--closed">
+          <li class="user-nav__search">
+            <input class="user-nav__input user-nav__input--search" type="text" placeholder="Поиск по сайту">
           </li>
-          <li class="nav-dropdown__item nav-dropdown__item--sale">
-            <a class="nav-dropdown__link" href="#">Распродажа</a>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-
+        <ul class="additional-nav">
+          <li class="additional-nav__item additional-nav__item--new">
+            <a class="additional-nav__link" href="#">Новое поступление</a>
+          </li>
+          <li class="additional-nav__item additional-nav__item--sale">
+            <a class="additional-nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
         <span class="main-header__delivery">Бесплатная доставка по России</span>
       </div>
-
     </header>
     <div class="page-header-wrapper">
       <div class="page-header page-header--index">
@@ -165,5 +163,6 @@
         <button class="modal__btn" type="submit">Добавить</button>
       </form>
     </div>
+    <script src="js/navigation.js"></script>
   </body>
 </html>
