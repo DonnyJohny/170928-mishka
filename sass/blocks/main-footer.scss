@@ -1,4 +1,20 @@
 .main-footer {
-  padding: 0 30px;
   background-color: $footer-background;
+}
+.main-footer__logo {
+  display: none;
+}
+@media #{$tablet-width}{
+  .main-footer__logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    min-height: 45px;
+  }
+}
+@media #{$desktop-width} {
+  .main-footer__logo {
+    width: 175px;
+    margin-right: 175px;
+  }
 }

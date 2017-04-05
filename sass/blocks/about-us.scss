@@ -1,7 +1,8 @@
 .about-us {
+  width: 260px;
+  margin: 0 auto;
   padding: 0 30px;
 }
-
 .about-us__subtitle {
   margin: 0;
   margin-bottom: 28px;
@@ -9,7 +10,6 @@
   font-size: $font-size-big;
   line-height: $line-height-big;
 }
-
 .about-us__item {
   position: relative;
 
@@ -102,4 +102,43 @@
 }
 .about-us__description {
     margin: 0;
+
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: $font-weight-bold;
+}
+
+@media #{$tablet-width} {
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    padding-top: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-us__subtitle {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .about-us__item {
+    width: 290px;
+    padding-bottom: 30px;
+  }
+}
+
+@media #{$desktop-width} {
+  .about-us {
+    width: 700px;
+    padding-top: 30px;
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+  .about-us__subtitle {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

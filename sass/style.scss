@@ -1,24 +1,28 @@
-@import "normalize.css";
+@import "normalize";
 
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
 
+@import "blocks/main-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/nav-dropdown.scss";
+@import "blocks/page-header-wrapper.scss";
 @import "blocks/page-header.scss";
+@import "blocks/page-navigation-wrapper.scss";
 @import "blocks/page-navigation.scss";
 @import "blocks/week-product.scss";
 @import "blocks/about-us.scss";
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
+@import "blocks/main-footer-wrapper.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/modal.scss";
 
 @import "blocks/products-wrapper.scss";
-@import "blocks/product-card";
+@import "blocks/product-card.scss";
 
 @import "blocks/video-wrapper.scss";
 @import "blocks/video.scss";

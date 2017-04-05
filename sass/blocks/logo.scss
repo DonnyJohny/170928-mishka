@@ -1,16 +1,32 @@
 .logo {
   margin: 0;
-  padding: 22px 0;
-
+  min-height: 79px;
+  width: 100%;
   text-align: center;
 
   background-color: $nav-background;
+
   border-bottom: 1px solid $nav-border;
 }
-
 .logo__image {
-  margin: 0;
-
   width: 86px;
   height: 35px;
+}
+
+@media #{$tablet-width} {
+  .logo {
+    width: 370px;
+    min-height: 88px;
+    order: 0;
+    border-color: #e7e7e7;
+  }
+}
+
+@media #{$desktop-width} {
+  .logo {
+  width: 280px;
+  order: 1;
+  border-bottom: 1px solid #e7e7e7;
+  flex-grow: 1;
+  }
 }

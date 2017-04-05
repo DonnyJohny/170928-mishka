@@ -1,21 +1,50 @@
 .page-navigation {
-  padding: 22px 30px;
-  padding-right: 160px;
-
   font-size: 19px;
   font-weight: $font-weight-bold;
 
   &--interior {
     background-color: $page-header-interior;
+    margin: 0 ;
   }
 
   &--toys {
     background-color: $page-header-toys;
+    margin: 0 ;
   }
 }
 
 .page-navigation__category {
+  display: block;
+  width: 260px;
+  padding: 22px 30px;
+  margin: 0 auto;
   color: $page-header-text;
 
   text-decoration: none;
+}
+
+@media #{$tablet-width} {
+  .page-navigation {
+    min-height: 55px;
+    width: 334px;
+  }
+  .page-navigation__category{
+    width: 160px;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 140px;
+    padding-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media #{$desktop-width} {
+  .page-navigation {
+    width: 525px;
+  }
+  .page-navigation__category {
+    padding-right: 330px;
+  }
 }
