@@ -14,8 +14,6 @@
   text-decoration: none;
 }
 .nav-dropdown__item {
-
-
   font-weight: $font-weight-bold;
 
   background-color: $nav-background;
@@ -41,6 +39,7 @@
 .nav-dropdown--new {
   display: none;
 }
+
 
 @media #{$tablet-width} {
   .nav-dropdown {

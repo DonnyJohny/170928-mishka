@@ -1,4 +1,6 @@
 .main-header__wrapper {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
 
@@ -7,6 +9,7 @@
 
   background-color: #ffffff;
 }
+
 .main-header__delivery {
   display: none;
 }
