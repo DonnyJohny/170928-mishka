@@ -3,10 +3,12 @@
   padding: 15px 30px;
   margin: 0 auto;
 }
+
 .order-form__text {
   width: 260px;
   margin: 0 auto;
 }
+
 .order-form__subtitle {
   position: relative;
 
@@ -169,6 +171,7 @@
   .order-form__block-wrapper {
     background-color: #f1f1f1;
   }
+
   .order-form__block {
     display: flex;
     width: 668px;
@@ -177,11 +180,13 @@
     padding: 25px 50px;
     margin: 0 auto;
   }
+
   .order-form__text {
     width: 600px;
     padding-top: 70px;
     padding-bottom: 30px;
   }
+
   .order-form__wrapper {
     &--checkbox {
       display: flex;
@@ -193,10 +198,12 @@
       width: 493px;
     }
   }
+
   .order-form__input-wrapper {
     display: flex;
     margin-bottom: 15px;
   }
+
   .order-form__subtitle {
     width: 167px;
     margin: 0;
@@ -216,26 +223,32 @@
       width: 180px;
     }
   }
+
   .order-form__input {
     margin-left: 25px;
     width: 330px;
     flex-grow: 1;
   }
+
   .order-form__wrapper--contacts {
     width: 501px;
   }
+
   .order-form__contacts {
     width: 446px;
   }
+
   .order-form__textarea {
     width: 467px;
   }
+
   .order-form__btn {
     width: auto;
     max-width: 230px;
     order: -1;
     padding: 14px 29px;
   }
+
   .order-form__required-field {
     margin-left: auto;
   }
@@ -245,6 +258,7 @@
   .order-form__block {
     width: 1050px;
   }
+
   .order-form__wrapper {
     &--checkbox {
       width: 726px;
@@ -254,25 +268,32 @@
       margin-right: 170px;
     }
   }
+
   .order-form__input-wrapper {
     width: 700px;
   }
+
   .order-form__input {
     margin-left: 25px;
     width: 555px;
   }
+
   .order-form__wrapper--contacts {
     width: 700px;
   }
+
   .order-form__contacts {
     width: 645px;
   }
+
   .order-form__textarea {
     width: 666px;
   }
+
   .order-form__btn {
     margin-left: 175px;
   }
+
   .order-form__required-field {
     margin-right: 175px;
   }

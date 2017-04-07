@@ -1,5 +1,4 @@
 .modal {
-
   width: 260px;
   margin: 0 auto;
   padding-left: 30px;
@@ -9,11 +8,13 @@
   text-align: center;
   border: 1px solid #c6c6c6;
 }
+
 .modal__form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .modal__title {
   margin: 0 auto;
   padding: 0 50px;
@@ -22,45 +23,49 @@
   line-height: $line-height-big;
   font-weight: $font-weight-bold;
 }
+
 .modal__text {
   width: 100%;
 }
-.modal__label {
-    width: 80px;
-    margin-bottom: 30px;
-    padding: 10px 0;
 
-    border: 1px solid $modal-border;
-  }
+.modal__label {
+  width: 80px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+
+  border: 1px solid $modal-border;
+}
 
 .modal__radio {
-    display: none;
-  }
+  display: none;
+}
 
 .modal__btn {
-    width: 100%;
-    padding: 15px 0;
+  width: 100%;
+  padding: 15px 0;
 
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: $font-weight-bold;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $modal-btn;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $modal-btn;
 
-    background-color: $modal-btn-background;
-    border: none;
-  }
+  background-color: $modal-btn-background;
+  border: none;
+}
 
 @media #{$desktop-width} {
   .modal {
     width: 355px;
     padding: 45px 105px;
   }
+
   .modal__title{
     padding: 0;
   }
+
   .modal__label {
     width: 110px;
   }

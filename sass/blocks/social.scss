@@ -4,10 +4,12 @@
 
   font-size: 0;
 }
+
 .social__item {
   display: inline-block;
   vertical-align: top;
 }
+
 .social__link {
   position: relative;
 
@@ -66,22 +68,27 @@
 
     border: none;
   }
+
   .social__item {
     width: 60px;
     min-height: 45px;
     padding: 0;
   }
+
   .social__link {
     width: 60px;
     height: 45px;
     padding: 0;
   }
+
   .social__link--instagramm::before {
     left: 15px;
   }
+
   .social__link--fb::before {
     left: 25px;
   }
+
   .social__link--twitter::before {
     left: 15px;
   }
