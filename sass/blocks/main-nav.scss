@@ -17,7 +17,6 @@
 
 .main-nav__item {
   font-weight: $font-weight-bold;
-
   background-color: $nav-background;
   border-bottom: 1px solid $nav-border;
 }
@@ -46,6 +45,15 @@
 
   .main-nav--nojs .main-nav__item {
     display: block;
+  }
+
+  .main-nav__link {
+    width: 215px;
+    padding-left: 75px;
+    padding-right: 30px;
+    margin: 0 auto;
+
+    text-align: left;
   }
 }
 

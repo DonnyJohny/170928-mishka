@@ -8,20 +8,8 @@ navToggle.classList.remove('main-header__toggle--nojs');
 
 if(navToggle){
   navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed') && navUser.classList.contains('user-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navUser.classList.remove('user-nav--closed');
-      navMain.classList.add('main-nav--opened');
-      navUser.classList.add('user-nav--opened');
-      navToggle.classList.add('main-header__toggle--opened');
-    }
-    else {
-      navMain.classList.add('main-nav--closed');
-      navUser.classList.add('user-nav--closed');
-      navToggle.classList.add('main-header__toggle--closed');
-      navMain.classList.remove('main-nav--opened');
-      navUser.classList.remove('user-nav--opened');
-      navToggle.classList.remove('main-header__toggle--opened');
-    }
+    navMain.classList.toggle("main-nav--closed");
+    navUser.classList.toggle("user-nav--closed");
+    navToggle.classList.toggle("main-header__toggle--opened");
   })
 };

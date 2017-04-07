@@ -34,7 +34,7 @@
 
 .user-nav__input {
   width: 215px;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 27px;
   padding-left: 75px;
   padding-right: 30px;
@@ -79,6 +79,15 @@
 
   .user-nav--nojs .user-nav__input {
     display: block;
+  }
+
+  .user-nav__link {
+    width: 215px;
+    padding-left: 75px;
+    padding-right: 30px;
+    margin: 0 auto;
+
+    text-align: left;
   }
 }
 
