@@ -27,15 +27,16 @@
     background-color: transparent;
 
     &:nth-child(2n) {
-      padding-left: 30px;
+      padding-left: 33px;
       border: none;
     }
   }
 
   .additional-nav__link {
     display: block;
-    padding: 27px 0;
+    padding: 18px 0;
 
+    font-size: 16px;
     font-weight: $font-weight-bold;
     color: $nav-color;
     text-decoration: none;

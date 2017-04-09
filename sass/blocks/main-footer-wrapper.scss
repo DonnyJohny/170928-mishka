@@ -12,6 +12,8 @@
 }
 @media #{$desktop-width} {
   .main-footer-wrapper{
+    display: flex;
+    justify-content: space-between;
     width: 1050px;
   }
 }

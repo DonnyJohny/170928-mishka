@@ -14,11 +14,13 @@
   font-size: 19px;
   line-height: 34px;
   font-weight: $font-weight-bold;
+  color: $main-color;
+  text-decoration: none;
 
   &::before {
     position: absolute;
     content: "";
-    right: 13px;
+    right: 51px;
 
     width: 27px;
     height: 34px;
@@ -31,9 +33,11 @@
   .copyright {
     display: inline-block;
     vertical-align: top;
-    width: 185px;
+    width: 183px;
     margin: 0;
-    padding: 0;
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-bottom: 0;
     min-height: 45px;
   }
 
@@ -52,6 +56,6 @@
 
 @media #{$desktop-width} {
   .copyright {
-    width: 175px;
+    width: 185px;
   }
 }

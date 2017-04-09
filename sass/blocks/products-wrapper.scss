@@ -9,7 +9,7 @@
 @media #{$tablet-width} {
   .products-wrapper{
     width: 668px;
-    padding-top: 80px;
+    padding-top: 78px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -18,5 +18,6 @@
 @media #{$desktop-width} {
   .products-wrapper {
     width: 1050px;
+    padding-top: 128px;
   }
 }

@@ -24,7 +24,8 @@
   &--instagramm::before {
     position: absolute;
     content: "";
-    right: 0;
+    top: 30px;
+    right: 8px;
 
     width: 22px;
     height: 21px;
@@ -36,7 +37,7 @@
   &--fb::before {
     position: absolute;
     content: "";
-    left: 30px;
+    left: 33px;
 
     width: 15px;
     height: 29px;
@@ -48,7 +49,8 @@
   &--twitter::before {
     position: absolute;
     content: "";
-    left: 0;
+    top: 30px;
+    left: 3px;
 
     width: 24px;
     height: 20px;
@@ -82,21 +84,35 @@
   }
 
   .social__link--instagramm::before {
-    left: 15px;
+    top: 13px;
   }
 
   .social__link--fb::before {
-    left: 25px;
+    top: 10px;
   }
 
   .social__link--twitter::before {
-    left: 15px;
+    top: 13px;
+    left: 30px;
   }
 }
 
 @media #{$desktop-width} {
   .social {
-    margin-right: 162px;
     padding: 0 85px;
+  }
+  .social__link--instagramm::before {
+    top: 13px;
+    left: 23px;
+  }
+
+  .social__link--fb::before {
+    top: 8px;
+    left: 28px;
+  }
+
+  .social__link--twitter::before {
+    top: 13px;
+    left: 20px;
   }
 }

@@ -1,20 +1,23 @@
 .product-card {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  padding-bottom: 27px;
 
   border: 1px solid $product-border;
 }
 
 .product-card__image {
   width: 260px;
-  height: 165px;
+  height: 195px;
 
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .product-card__title {
   margin: 0;
-  margin-bottom: 15px;
-  padding: 0 25px;
+  margin-bottom: 8px;
+  padding: 0 28px;
+
+  font-size: 19px;
 }
 
 .product-card__link {
@@ -34,10 +37,9 @@
   display: inline-block;
   vertical-align: top;
   width: 210px;
-  padding-top: 15px;
-  padding-left: 25px;
+  padding-top: 18px;
+  padding-left: 27px;
   padding-right: 25px;
-  margin-bottom: 30px;
 
   font-weight: $font-weight-bold;
   font-size: $font-size-small;
@@ -47,14 +49,17 @@
 @media #{$tablet-width} {
   .product-card {
     position: relative;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 274px;
     min-height: 309px;
+    padding-top: 25px;
     padding-left: 360px;
     padding-right: 30px;
-    padding-top: 25px;
+    padding-bottom: 0;
+    margin-bottom: 52px;
   }
 
   .product-card__image {
@@ -68,8 +73,27 @@
     margin: 0;
   }
 
+  .product-card__title {
+    padding-left: 0;
+    padding-right: 40px;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .product-card__description {
+    padding: 0;
+
+    font-size: 14px;
+    letter-spacing: 0.6px;
+  }
+
   .product-card__price {
     margin-top: auto;
+    padding-top: 24px;
+    padding-left: 5px;
+    padding-bottom: 27px;
+
+    font-size: 17px;
   }
 }
 
@@ -82,11 +106,12 @@
 
   .product-card {
     width: 264px;
-    min-height: 125px;
+    min-height: 146px;
     padding-top: 487px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
+    margin-bottom: 57px;
   }
 
   .product-card__image {
@@ -94,7 +119,14 @@
     height: 463px;
   }
 
+  .product-card__title{
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+
   .product-card__price {
+    padding-bottom: 0;
+    padding-left: 0;
     margin-bottom: 0;
   }
 }

@@ -1,12 +1,15 @@
 .about-us {
   width: 260px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding-top: 32px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .about-us__subtitle {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 
   font-size: $font-size-big;
   line-height: $line-height-big;
@@ -16,7 +19,7 @@
   position: relative;
 
   padding-top: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 
   &--ecology::before {
     position: absolute;
@@ -35,7 +38,7 @@
   &--style::before {
     position: absolute;
     content: "";
-    top: 5px;
+    top: 7px;
     left: 2px;
 
     display: block;
@@ -49,7 +52,7 @@
   &--likes::before {
     position: absolute;
     content: "";
-    top: 5px;
+    top: 12px;
     left: 9px;
 
     display: block;
@@ -63,8 +66,8 @@
   &--handmade::before {
     position: absolute;
     content: "";
-    top: 5px;
-    left: 9px;
+    top: 10px;
+    left: 5px;
 
     display: block;
     width: 35px;
@@ -77,8 +80,8 @@
   &--support::before {
     position: absolute;
     content: "";
-    top: 5px;
-    left: 0;
+    top: 10px;
+    left: -5px;
 
     display: block;
     width: 55px;
@@ -91,8 +94,8 @@
   &--present-box::before {
     position: absolute;
     content: "";
-    top: 5px;
-    left: 10px;
+    top: 10px;
+    left: 4px;
 
     display: block;
     width: 33px;
@@ -105,7 +108,7 @@
 .about-us__description {
     margin: 0;
 
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     font-weight: $font-weight-bold;
 }
@@ -114,7 +117,7 @@
   .about-us {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
     width: 668px;
     padding-top: 55px;
     padding-left: 50px;
@@ -123,27 +126,86 @@
 
   .about-us__subtitle {
     width: 100%;
+    margin-bottom: 45px;
+
     font-size: 43px;
-    line-height: 50px;
-    margin-bottom: 30px;
+    line-height: 40px;
+    letter-spacing: 1px;
   }
 
   .about-us__item {
     width: 290px;
-    padding-bottom: 30px;
+    margin-bottom: 0;
+    padding-bottom: 52px;
+
+    &--ecology {
+      order: 1;
+      margin-right: 43px;
+    }
+
+    &--style {
+      order: 3;
+      margin-right: 43px;
+    }
+
+    &--likes {
+      order: 5;
+      margin-right: 43px;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--present-box {
+      order: 6;
+    }
+  }
+
+  .about-us__description {
+    font-size: 21px;
   }
 }
 
 @media #{$desktop-width} {
   .about-us {
     width: 700px;
-    padding-top: 30px;
+    padding-top: 59px;
     padding-left: 225px;
     padding-right: 225px;
+    padding-bottom: 35px;
   }
 
   .about-us__subtitle {
+    margin-bottom: 40px;
+
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-us__item {
+    width: 290px;
+    margin-bottom: 0;
+    padding-bottom: 52px;
+
+    &--ecology {
+      order: 1;
+      margin-right: 58px;
+    }
+
+    &--style {
+      order: 3;
+      margin-right: 58px;
+    }
+
+    &--likes {
+      order: 5;
+      margin-right: 58px;
+    }
+
   }
 }
