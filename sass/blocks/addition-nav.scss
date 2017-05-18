@@ -41,5 +41,12 @@
     color: $nav-color;
     text-decoration: none;
     background-color: transparent;
+
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

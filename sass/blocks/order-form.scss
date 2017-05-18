@@ -45,7 +45,6 @@
   padding-right: 30px;
 
   font-size: 13px;
-  letter-spacing: 0.35px;
 }
 
 .order-form__subtitle {
@@ -97,8 +96,6 @@
 
   display: block;
 
-
-
   font-weight: $font-weight-bold;
 
   &--radio {
@@ -119,6 +116,14 @@
 
       border: 2px solid $form-border;
       border-radius: 50%;
+    }
+
+    &:hover::before {
+      border-color: #62d1ba;
+    }
+
+    &:active::before {
+      border-color: #c7c7c7;
     }
   }
 
@@ -171,6 +176,21 @@
 
       background-image: url("../img/icon-mail.svg");
     }
+  }
+}
+
+#accessories:checked ~ .order-form__label--radio[for="accessories"],
+#toys:checked ~ .order-form__label--radio[for="toys"] {
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #62d1ba;
   }
 }
 

@@ -51,6 +51,13 @@
 
   background-color: $review-color;
   border: 2px solid $review-border;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__write-us {
@@ -103,7 +110,6 @@
 
     font-size: 17px;
     line-height: 30px;
-    letter-spacing: 0.5px;
   }
 
   .reviews__author {

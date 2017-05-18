@@ -7,6 +7,13 @@
   text-align: center;
   background-color: $nav-background;
   border-bottom: 1px solid $nav-border;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo__image {

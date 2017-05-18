@@ -1,11 +1,12 @@
 body {
+  position: relative;
   margin: 0;
 
   font-style: normal;
   font-weight: $font-weight-normal;
   font-size: $font-size;
   line-height: $line-height;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: $main-color;
 
   background-color: $main-background;

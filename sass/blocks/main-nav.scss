@@ -13,6 +13,13 @@
 
   color: $nav-color;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item {
@@ -106,6 +113,5 @@
 
   .main-nav__link {
     padding-top: 31px;
-    letter-spacing: 0.7px;
   }
 }

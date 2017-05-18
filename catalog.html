@@ -55,7 +55,7 @@
             <a class="product-card__link" href="#">Зайчик-попрыгайчик</a>
           </h3>
           <p class="product-card__description">Рост 30 см, вес 200 г</p>
-          <a class="product-card__price">1 200 руб.</a>
+          <a class="product-card__price btn">1 200 руб.</a>
         </div>
         <div class="product-card">
           <a class="product-card__image-link" href="#">
@@ -65,7 +65,7 @@
             <a class="product-card__link" href="#">Корзинка для белья</a>
           </h3>
           <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
-          <a class="product-card__price">690 руб.</a>
+          <a class="product-card__price btn">690 руб.</a>
         </div>
         <div class="product-card">
           <a class="product-card__image-link" href="#">
@@ -75,7 +75,7 @@
             <a class="product-card__link" href="#">Большая корзина для игрушек</a>
           </h3>
           <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
-          <a class="product-card__price">1 500 руб.</a>
+          <a class="product-card__price btn">1 500 руб.</a>
         </div>
       </div>
       <div class="video-wrapper">
@@ -84,7 +84,7 @@
           <video class="video__video" poster="img/video-mobile@1x.jpg" src="#" width="260" height="150" alt="Создание корзины"></video>
           <button class="video__play" type="button"><img class="video__button__img" src="img/icon-play.svg" width="101" height="77" alt="Запуск видео"></button>
           <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="video__btn" href="#">Сделать заказ</a>
+          <a class="video__btn  btn" href="#">Сделать заказ</a>
         </div>
       </div>
     </main>
@@ -101,7 +101,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal modal--nojs modal--closed modal--opened">
       <form class="modal__form">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
@@ -117,6 +117,8 @@
         <button class="modal__btn" type="submit">Добавить</button>
       </form>
     </div>
+    <div class="overlay"></div>
     <script src="js/navigation.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

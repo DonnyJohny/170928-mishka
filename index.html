@@ -79,7 +79,7 @@
           </table>
           <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
           <span class="week-product__price">Цена: 990 руб.</span>
-          <a class="week-product__btn">Заказать</a>
+          <a class="week-product__btn btn">Заказать</a>
         </div>
       </div>
       <div class="about-us">
@@ -114,7 +114,7 @@
             <button class="reviews__btn reviews__btn--next" type="button"><img src="img/icon-right-arrow.svg" alt="Следующий отзыв"></button>
           </div>
         </blockquote>
-        <a class="reviews__write-us btn" href="#">Написать</a>
+        <a class="reviews__write-us" href="#">Написать</a>
       </div>
       <div class="contacts">
         <div class="contacts__wrapper">
@@ -131,7 +131,7 @@
           </table>
         </div>
         <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="450">
-        <a class="contacts__write btn" href="#">Напишите нам</a>
+        <a class="contacts__write" href="#">Напишите нам</a>
       </div>
     </main>
     <footer class="main-footer">
@@ -147,7 +147,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal modal--nojs modal--closed modal--opened">
       <form class="modal__form">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
@@ -163,6 +163,8 @@
         <button class="modal__btn" type="submit">Добавить</button>
       </form>
     </div>
+    <div class="overlay"></div>
     <script src="js/navigation.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
